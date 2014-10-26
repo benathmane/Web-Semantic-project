@@ -2,7 +2,7 @@
 <!DOCTYPE rdf:RDF [
 	 <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
 	 <!ENTITY cv_rdfs 'http://www.websem.fr/TD/Projet/cv.rdfs#'>
-	  <!ENTITY person 'http://www.w3.org/ns/person#'>
+	 <!ENTITY person 'http://www.w3.org/ns/person#'>
 	 <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
 ]>
 

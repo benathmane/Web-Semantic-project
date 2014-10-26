@@ -1,0 +1,132 @@
+<?xml version='1.0'?>
+
+<rdf:RDF
+		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+		xmlns:cv="http://www.polytech.fr/websemantic/cv/"
+		xmlns:foaf="http://xmlns.com/foaf/0.1/"
+		xml:base="http://www.polytech.fr/websemantic/cv/">
+
+<!-- CLASSES -->
+
+<rdfs:Class rdf:ID="Person">
+	<rdfs:subClassOf rdf:resource="foaf:Person"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="CV"/>
+
+<rdfs:Class rdf:ID="personalData" />
+
+<rdfs:Class rdf:ID="name" >
+	<rdfs:subClassOf rdf:resource="#personalData"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="lastname" >
+	<rdfs:subClassOf rdf:resource="#personalData"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="adress" >
+	<rdfs:subClassOf rdf:resource="#personalData"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="email" >
+	<rdfs:subClassOf rdf:resource="#personalData"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="phonenumber" >
+	<rdfs:subClassOf rdf:resource="#personalData"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="age" > 
+	<rdfs:subClassOf rdf:resource="#personalData"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="birthDate" >
+	<rdfs:subClassOf rdf:resource="#personalData"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="maritalStatus" >
+	<rdfs:subClassOf rdf:resource="#personalData"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="licenceDriver" >
+	<rdfs:subClassOf rdf:resource="#personalData"/>
+</rdfs:Class>
+
+
+<!-- PROPERTIES -->
+<rdf:Property rdf:ID='hasCV'>
+	<rdfs:domain rdf:resource='#Person'/>
+	<rdfs:range rdf:resource='#CV'/>
+	<rdfs:label xml:lang='fr'>a un CV</rdfs:label>
+	<rdfs:label xml:lang='en'>has CV</rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasName'>
+<rdfs:domain rdf:resource='#Person'/>
+<rdfs:range rdf:resource='#name'/>
+<rdfs:label xml:lang='fr'>a name </rdfs:label>
+<rdfs:label xml:lang='en'>contains </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasLastname'>
+<rdfs:domain rdf:resource='#Person'/>
+<rdfs:range rdf:resource='#lastname'/>
+<rdfs:label xml:lang='fr'>a prénom </rdfs:label>
+<rdfs:label xml:lang='en'>has lastName </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasBirthDate'>
+<rdfs:domain rdf:resource='#Person'/>
+<rdfs:range rdf:resource='#birthDate'/>
+<rdfs:label xml:lang='fr'>a birthDate </rdfs:label>
+<rdfs:label xml:lang='en'>has birthDate </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasAdress'>
+<rdfs:domain rdf:resource='#Person'/>
+<rdfs:range rdf:resource='#adress'/>
+<rdfs:label xml:lang='fr'>a adress </rdfs:label>
+<rdfs:label xml:lang='en'>has adress </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasEmail'>
+<rdfs:domain rdf:resource='#Person'/>
+<rdfs:range rdf:resource='#email'/>
+<rdfs:label xml:lang='fr'>a email </rdfs:label>
+<rdfs:label xml:lang='en'>has email </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasPhonenumber'>
+<rdfs:domain rdf:resource='#Person'/>
+<rdfs:range rdf:resource='#phonenumber'/>
+<rdfs:label xml:lang='fr'>a phonenumber </rdfs:label>
+<rdfs:label xml:lang='en'>has phonenumber </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasAge'>
+<rdfs:domain rdf:resource='#Person'/>
+<rdfs:range rdf:resource='#age'/>
+<rdfs:label xml:lang='fr'>a age </rdfs:label>
+<rdfs:label xml:lang='en'>has age </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasDate'>
+<rdfs:range rdf:resource='#date'/>
+<rdfs:label xml:lang='fr'> a date </rdfs:label>
+<rdfs:label xml:lang='en'>has date </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasmaritalStatus'>
+<rdfs:range rdf:resource="#MaritalStatus"/>
+<rdfs:label xml:lang='fr'> a date </rdfs:label>
+<rdfs:label xml:lang='en'>has date </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='haslicenceDriver'>
+<rdfs:range rdf:resource="#BooleanValue"/>
+<rdfs:label xml:lang='fr'> a date </rdfs:label>
+<rdfs:label xml:lang='en'>has date </rdfs:label>
+</rdf:Property>
+
+</rdf:RDF>
