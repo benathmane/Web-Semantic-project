@@ -1,0 +1,233 @@
+<?xml version="1.0" ?>
+<rdf:RDF 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:cv="http://polytech/websemantic/cv/"
+xml:base="http://polytech/websemantic/cv/"
+>
+
+<!-- ---------------------------------------------CLASSES---------------------------------------------------------------------------- -->
+
+<rdfs:Class rdf:ID="Person">
+	<rdfs:subClassOf rdf:resource="foaf:Person"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="CV" />
+<rdfs:Class rdf:ID="competence" />
+<rdfs:Class rdf:ID="technicalCompetence">
+	<rdfs:subClassOf rdf:resource="#competence"/>
+</rdfs:Class>
+<rdfs:Class rdf:ID="languisticCompetence">
+	<rdfs:subClassOf rdf:resource="#competence"/>
+</rdfs:Class>
+<rdfs:Class rdf:ID="interest" />
+
+<rdfs:Class rdf:ID="diploma" />
+<rdfs:Class rdf:ID="university" />
+<rdfs:Class rdf:ID="field" />
+<rdfs:Class rdf:ID="country" />
+<rdfs:Class rdf:ID="date" />
+<rdfs:Class rdf:ID="startDate" >
+	<rdfs:subClassOf rdf:resource="#date"/>
+</rdfs:Class>
+<rdfs:Class rdf:ID="endDate" >
+	<rdfs:subClassOf rdf:resource="#date"/>
+</rdfs:Class>
+<rdfs:Class rdf:ID="level" />
+<rdfs:Class rdf:ID="place" />
+<rdfs:Class rdf:ID="company" />
+
+<rdfs:Class rdf:ID="periode" />
+<rdfs:Class rdf:ID="Poste" />
+
+
+<rdfs:Class rdf:ID="reference" >
+<rdfs:subClassOf rdf:resource="#Person"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="training" />
+<rdfs:Class rdf:ID="certificate" />
+<rdfs:Class rdf:ID="professionalExperience" />
+<rdfs:Class rdf:ID="job" >
+<rdfs:subClassOf rdf:resource="#professionalExperience"/>
+</rdfs:Class>
+<rdfs:Class rdf:ID="internship" >
+<rdfs:subClassOf rdf:resource="#professionalExperience"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="personalData" />
+
+<rdfs:Class rdf:ID="name" >
+<rdfs:subClassOf rdf:resource="#personalData"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="lastname" >
+<rdfs:subClassOf rdf:resource="#personalData"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="adress" >
+<rdfs:subClassOf rdf:resource="#personalData"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="email" >
+<rdfs:subClassOf rdf:resource="#personalData"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="phonenumber" >
+<rdfs:subClassOf rdf:resource="#personalData"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="age" > 
+<rdfs:subClassOf rdf:resource="#personalData"/>
+</rdfs:Class>
+<rdfs:Class rdf:ID="birthDate" >
+<rdfs:subClassOf rdf:resource="#personalData"/>
+</rdfs:Class>
+
+
+
+<!-- ---------------------------------------------PROPERTIES---------------------------------------------------------------------------- -->
+<rdf:Property rdf:ID='hasCV'>
+<rdfs:domain rdf:resource='#Person'/>
+<rdfs:range rdf:resource='#CV'/>
+<rdfs:label xml:lang='fr'>a un CV </rdfs:label>
+<rdfs:label xml:lang='en'>has CV </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='relatedTo'>
+<rdfs:domain rdf:resource='#CV'/>
+<rdfs:range rdf:resource='#Person'/>
+<rdfs:label xml:lang='fr'>concerne </rdfs:label>
+<rdfs:label xml:lang='en'>related To </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='contains'>
+<rdfs:domain rdf:resource='#CV'/>
+<rdfs:label xml:lang='fr'>contient </rdfs:label>
+<rdfs:label xml:lang='en'>contains </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasName'>
+<rdfs:domain rdf:resource='#Person'/>
+<rdfs:range rdf:resource='#name'/>
+<rdfs:label xml:lang='fr'>a name </rdfs:label>
+<rdfs:label xml:lang='en'>contains </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasLastname'>
+<rdfs:domain rdf:resource='#Person'/>
+<rdfs:range rdf:resource='#lastname'/>
+<rdfs:label xml:lang='fr'>a prénom </rdfs:label>
+<rdfs:label xml:lang='en'>has lastName </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasBirthDate'>
+<rdfs:domain rdf:resource='#Person'/>
+<rdfs:range rdf:resource='#birthDate'/>
+<rdfs:label xml:lang='fr'>a birthDate </rdfs:label>
+<rdfs:label xml:lang='en'>has birthDate </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasAdress'>
+<rdfs:domain rdf:resource='#Person'/>
+<rdfs:range rdf:resource='#adress'/>
+<rdfs:label xml:lang='fr'>a adress </rdfs:label>
+<rdfs:label xml:lang='en'>has adress </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasEmail'>
+<rdfs:domain rdf:resource='#Person'/>
+<rdfs:range rdf:resource='#email'/>
+<rdfs:label xml:lang='fr'>a email </rdfs:label>
+<rdfs:label xml:lang='en'>has email </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasPhonenumber'>
+<rdfs:domain rdf:resource='#Person'/>
+<rdfs:range rdf:resource='#phonenumber'/>
+<rdfs:label xml:lang='fr'>a phonenumber </rdfs:label>
+<rdfs:label xml:lang='en'>has phonenumber </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasAge'>
+<rdfs:domain rdf:resource='#Person'/>
+<rdfs:range rdf:resource='#age'/>
+<rdfs:label xml:lang='fr'>a age </rdfs:label>
+<rdfs:label xml:lang='en'>has age </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasDate'>
+<rdfs:range rdf:resource='#date'/>
+<rdfs:label xml:lang='fr'> a date </rdfs:label>
+<rdfs:label xml:lang='en'>has date </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasUniversity'>
+<rdfs:range rdf:resource='#university'/>
+<rdfs:label xml:lang='fr'> a university </rdfs:label>
+<rdfs:label xml:lang='en'>has university </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasLevel'>
+<rdfs:range rdf:resource='#level'/>
+<rdfs:label xml:lang='fr'> a level </rdfs:label>
+<rdfs:label xml:lang='en'>has level </rdfs:label>
+</rdf:Property>
+
+
+<rdf:Property rdf:ID='hasField'>
+<rdfs:range rdf:resource='#level'/>
+<rdfs:label xml:lang='fr'> a field </rdfs:label>
+<rdfs:label xml:lang='en'>has field </rdfs:label>
+</rdf:Property>
+
+
+<rdf:Property rdf:ID='hasCountry'>
+<rdfs:range rdf:resource='#country'/>
+<rdfs:label xml:lang='fr'> a country </rdfs:label>
+<rdfs:label xml:lang='en'>has country </rdfs:label>
+</rdf:Property>
+
+
+<rdf:Property rdf:ID='hasPlace'>
+<rdfs:range rdf:resource='#place'/>
+<rdfs:label xml:lang='fr'> a place </rdfs:label>
+<rdfs:label xml:lang='en'>has place </rdfs:label>
+</rdf:Property>
+
+
+<rdf:Property rdf:ID='hasCompany'>
+<rdfs:range rdf:resource='#company'/>
+<rdfs:label xml:lang='fr'> a campany </rdfs:label>
+<rdfs:label xml:lang='en'>has company </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasPeriode'>
+<rdfs:range rdf:resource='#periode'/>
+<rdfs:label xml:lang='fr'> a periode </rdfs:label>
+<rdfs:label xml:lang='en'>has periode </rdfs:label>
+</rdf:Property>
+
+
+<rdf:Property rdf:ID='hasPoste'>
+<rdfs:range rdf:resource='#Poste'/>
+<rdfs:label xml:lang='fr'> a Poste </rdfs:label>
+<rdfs:label xml:lang='en'>has Poste </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasStartDate'>
+<rdfs:range rdf:resource='#startDate'/>
+<rdfs:label xml:lang='fr'> a startDate </rdfs:label>
+<rdfs:label xml:lang='en'>has startDate </rdfs:label>
+</rdf:Property>
+
+
+<rdf:Property rdf:ID='hasEndDate'>
+<rdfs:range rdf:resource='#endDate'/>
+<rdfs:label xml:lang='fr'> a endDate </rdfs:label>
+<rdfs:label xml:lang='en'>has endDate </rdfs:label>
+</rdf:Property>
+
+
+
+</rdf:RDF>
