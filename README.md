@@ -1,3 +1,5 @@
+WEB Sémantique
+
 Travail à réaliser en binôme
 
     Vous devez faire un compte rendu des 3 séances sur RDF et RDFS, en 2 pages maximum au format pdf.
@@ -12,3 +14,19 @@ Travail à réaliser en binôme
 
 		
 RQ: AYOUB , TU PEUT PRENDRE MON CV comme EXEMPLE , il utilise la RDFS créer. 
+
+
+
+
+TD Représentation des connaissances et Raisonnement
+
+Travail à réaliser en binôme
+
+	vous devez formaliser en Logiques de Description, avec l'outil Protege, ou dans le modèle des Graphes Conceptuels, avec l'outil CoGui, une représentation de vos deux CV.
+
+	Si vous choisissez les logiques de description, vous devrez mettre l'accent sur la définition des classes et propriétés dans votre ontologie ansi que sur les raisonnements produits par le raisonneur intégré à Protege.
+	Si vous choisissez les graphes conceptuels, vous devrez fournir des graphes requêtes permettant d'interroger les graphes représentant vos CV.
+	Rendu :
+
+Un fichier pdf de 2 pages rendant compte de votre modélisation
+Le fichier source de Protege ou Cogui
