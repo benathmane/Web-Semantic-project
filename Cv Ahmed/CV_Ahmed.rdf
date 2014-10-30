@@ -49,7 +49,7 @@
     <atUniversity rdf:resource="http://www.polytech.fr/websemantic/cv#ESPRIT"/>
     <hasDate>2013</hasDate>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-information-Retrieval">
+  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#DevelopementFrameworkJAVA-information-Retrieval">
     <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#task"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#Music">
@@ -88,7 +88,7 @@
     <endATDate>03-2013</endATDate>
     <hasOccupiedPosition>Developpeur Java-information-Retrieval</hasOccupiedPosition>
     <inCountry rdf:resource="http://www.polytech.fr/websemantic/cv#France"/>
-    <taskDone rdf:resource="http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-information-Retrieval"/>
+    <taskDone rdf:resource="http://www.polytech.fr/websemantic/cv#DevelopementFrameworkJAVA-information-Retrieval"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#david">
     <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#Person"/>
