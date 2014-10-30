@@ -4,21 +4,23 @@
 
 
 
-:Ayoub rdf:type :Person;
-		 :hasName "Benathmane";
-		 :hasLastname "Ayoub";
-		 :hasBirthDate "04/01/1993";
-		 :hasAdress "Casablanca";
-		 :hasEmail "ayoubEmail";
-		 :hasPhonenumber 11111;
-		 :hasAge 21;
+:Ayoub rdf:type :Person,
+				:student ;
+		 :hasName "Benathmane"^^xsd:string;
+		 :hasLastname "Ayoub"^^xsd:string;
+		 :hasBirthDate "1993-01-04"^^xsd:date;
+		 :hasAdress "Casablanca"^^xsd:string;
+		 :hasEmail "ayoubEmail"^^xsd:string;
+		 :hasPhonenumber "11111"^^xsd:Integer;
+		 :hasAge "21"^^xsd:Integer;
 		 :hasmaritalStatus :Single;
 		 :hasCV :CV_AYOUB;
-		 :haslicenceDriver true.
-		 
+		 :haslicenceDriver "true"^^xsd:boolean;
+		 :hascharateritic "à l'aise de travailler sous pression"^^xsd:string;.
 		 
 :CV_AYOUB 	rdf:type :CV;
-			:hasTitle "Intégrateur Web, Administrateur Systèmes";
+			:hasTitle "Intégrateur Web, Administrateur Systèmes"^^xsd:string;
+			:hasSummary "Recherche Un stage de fin d'étude"^^xsd:string;
 			:containsDiploma :Baccalaureat;
 			:containsDiploma :DUT;
 			:containsDiploma :LicencePRO;
@@ -43,103 +45,117 @@
 			.
 
 :Baccalaureat 	rdf:type :diploma;
-			:studyLevel "BAC";
-			:inField "Physique Chimie";
+			:studyLevel "BAC"^^xsd:string;
+			:inField "Physique Chimie"^^xsd:string;
 			:atUniversity :IBNOUMANDOUR;
-			:hasDate "2010";
+			:hasDate "2010"^^xsd:gYear;
 			.
 :IBNOUMANDOUR rdf:type :university.	
 
 :DUT 	rdf:type :diploma;
-			:studyLevel "BAC+2";
-			:inField "Administration des systèmes et réseaux";
+			:studyLevel "BAC+2"^^xsd:string;
+			:inField "Administration des systèmes et réseaux"^^xsd:string;
 			:atUniversity :EST;
-			:hasDate "2012";
+			:hasDate "2012"^^xsd:gYear;
 			.
 :ESt rdf:type :university.	
 
 :LicencePRO 	rdf:type :diploma;
-			:studyLevel "Licence(BAC+3)";
-			:inField "Concepteur-integrateur des Systèmes Intranet/Internet";
+			:studyLevel "Licence(BAC+3)"^^xsd:string;
+			:inField "Concepteur-integrateur des Systèmes Intranet/Internet"^^xsd:string;
 			:atUniversity :IUTNANCYCHARLEMAGNE;
-			:hasDate "2013";
+			:hasDate "2013"^^xsd:gYear;
 			.
 :IUTNANCYCHARLEMAGNE rdf:type :university. 		
 
 :MastereWEB 	rdf:type :diploma;
-			:studyLevel "BAC+5";
-			:inField "WEB";
+			:studyLevel "BAC+5"^^xsd:string;
+			:inField "WEB"^^xsd:string;
 			:atUniversity :POLYTECH-NICE-SOPHIA-ANTIPOLIS;
-			:startATDate "2014";
-			:endATDate "2015";
+			:startATDate "2014"^^xsd:gYear;
+			:endATDate "2015"^^xsd:gYear;
 			.
+			
 :POLYTECH-NICE-SOPHIA-ANTIPOLIS rdf:type :university.
 
 :MastereWEB :containsCourse :WebSemantic.
 :WebSemantic rdf:type :obligatoryCourse; :teachedBy :CATHERINE-FARON-ZUCKER; :followedBy :Ahmed;:followedBy :Ayoub;:followedBy :tounsi;:followedBy :Michele;
-:followedBy :david.
+:followedBy :david ;  :hasProject :ProjectCV ; :hasMark "18"^^xsd:Integer ; .
 :CATHERINE-FARON-ZUCKER rdf:type :teacher.
 :Ahmed rdf:type :student.
 :tounsi rdf:type :student.
 :Michele rdf:type :student.
 :david rdf:type :student.
-:Romain rdf:type :student.
-:POLO rdf:type :student.
+:ProjectCV rdf:type :StudyProject.
 
-:MastereWEB :containsCourse :IngenierieConnaissance.
-:IngenierieConnaissance rdf:type :obligatoryCourse; :teachedBy :CATHERINE-FARON-ZUCKER; :followedBy :Ahmed;:followedBy :Ayoub;:followedBy :tounsi;:followedBy :Romain;
-:followedBy :POLO.
+:MastereWEB :containsCourse :SOA.
+:SOA rdf:type :optionalCourse; :teachedBy :Mosser; :followedBy :Ahmed;:followedBy :Ayoub;:followedBy :tounsi;:followedBy :Michele;
+:followedBy :david ;:followedBy :francois;:followedBy :cathline;:followedBy :guillaume;  :hasProject :ProjectSOA ; :hasMark "10"^^xsd:Integer ; .
+:Mosser rdf:type :teacher.
+:francois rdf:type :student.
+:cathline rdf:type :student.
+:guillaume rdf:type :student.
+:ProjectSOA rdf:type :StudyProject.
+
+:MastereAL :containsCourse :ArchitectureLogicielle.
+:ArchitectureLogicielle rdf:type :obligatoryCourse; :teachedBy :Salvan; :followedBy :francois;:followedBy :cathline;:followedBy :guillaume;
+:hasProject :ProjectAL ; .
+:Salvan rdf:type :teacher.
+:ProjectAL rdf:type :StudyProject.
 
 :StageDeveloppeurASP rdf:type :internship;
 				:inCompany :ONE;
-				:hasOccupiedPosition "Developpeur Application Desktop ASP.NET";
+				:hasOccupiedPosition "Developpeur Application Desktop ASP.NET"^^xsd:string;
 				:taskDone :DeveloppementAppForDesktop;
-				:startATDate "07-2011";
-				:endATDate "08-2011";
+				:startATDate "2011-07-01"^^xsd:date;
+				:endATDate "2011-08-31"^^xsd:date;
 				:inCountry :Maroc;
 				.
 :ONE rdf:type :company.
+:ONE rdf:type :trainingOrganization.
 :DeveloppementAppForDesktop rdf:type :task.
 :France rdf:type :country.
 
 :StageAdministrateurReseau rdf:type :internship;
 				:inCompany :OCP;
-				:hasOccupiedPosition "Administrateur Reseau";
+				:hasOccupiedPosition "Administrateur Reseau"^^xsd:string;
 				:taskDone :Administration-Reseau;
-				:startATDate "04-2012";
-				:endATDate "06-2012";
+				:startATDate "2012-04-01"^^xsd:date;
+				:endATDate "2012-06-31"^^xsd:date;
 				:inCountry :Maroc;
 				.
 :OCP rdf:type :company.
+:OCP rdf:type :trainingOrganization.
 :Administration-Reseau rdf:type :task.
 
 :StageDeveloppeurWEB rdf:type :internship;
 				:inCompany :CCIDesVosges;
-				:hasOccupiedPosition "Developpeur Symfony 2";
+				:hasOccupiedPosition "Developpeur Symfony 2"^^xsd:string;
 				:taskDone :DevelopementAnnuaireDesProduitsInstruels;
-				:startATDate "04-2013";
-				:endATDate "07-2013";
+				:startATDate "2013-04-01"^^xsd:date;
+				:endATDate "2013-07-01"^^xsd:date;
 				:inCountry :France;
 				.
 :CCIDesVosges rdf:type :company.
+:CCIDesVosgesrdf:type :trainingOrganization.
 :DevelopementAnnuaireDesProduitsInstruels rdf:type :task.
 
 :AgentAccueil-Stadardiste rdf:type :job;
 				:inCompany :CIV;
-				:hasOccupiedPosition "Agent d'accueil et Standardiste";
+				:hasOccupiedPosition "Agent d'accueil et Standardiste"^^xsd:string;
 				:taskDone :Accueil;
-				:startATDate "07-2014";
-				:endATDate "08-2014";
+				:startATDate "2014-07-01"^^xsd:date;
+				:endATDate "2014-08-31"^^xsd:date;
 				:inCountry :France;
 				.
 :Accueil rdf:type :task.
 
 :Surveillant-nuit rdf:type :job;
 				:inCompany :CIV;
-				:hasOccupiedPosition "Surveillant de nuit";
+				:hasOccupiedPosition "Surveillant de nuit"^^xsd:string;
 				:taskDone :Surveillance;
-				:startATDate "09-2014";
-				:endATDate "06-2015";
+				:startATDate "2014-09-01"^^xsd:date;
+				:endATDate "2015-06-30"^^xsd:date;
 				:inCountry :France;
 				.
 :Surveillance rdf:type :task.
@@ -148,10 +164,10 @@
 :Music rdf:type :interest.
 :Les_nouvelles_technologies rdf:type :interest.
 
-:PHP rdf:type :technicalCompetence; :haslevel "3 month experience".
-:NET rdf:type :technicalCompetence; :haslevel "2 month experience".
-:SEMANTICWEB rdf:type :technicalCompetence; :haslevel "Learning".
+:PHP rdf:type :technicalCompetence; :haslevel "3 month experience"^^xsd:string.
+:NET rdf:type :technicalCompetence; :haslevel "2 month experience"^^xsd:string.
+:SEMANTICWEB rdf:type :technicalCompetence; :haslevel "Learning"^^xsd:string.
 
-:FRANCAIS rdf:type :languisticCompetence; :haslevel "Courant".
-:ARABE rdf:type :languisticCompetence; :haslevel "Langue maternelle".
-:ANGLAIS rdf:type :languisticCompetence; :haslevel "Intermédiaire".
+:FRANCAIS rdf:type :languisticCompetence; :haslevel "Courant"^^xsd:string.
+:ARABE rdf:type :languisticCompetence; :haslevel "Langue maternelle"^^xsd:string.
+:ANGLAIS rdf:type :languisticCompetence; :haslevel "Intermédiaire"^^xsd:string.
