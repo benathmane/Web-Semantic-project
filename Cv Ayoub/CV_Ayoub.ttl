@@ -1,0 +1,157 @@
+@prefix : <http://www.polytech.fr/websemantic/cv#>.
+@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+
+
+:Ayoub rdf:type :Person;
+		 :hasName "Benathmane";
+		 :hasLastname "Ayoub";
+		 :hasBirthDate "04/01/1993";
+		 :hasAdress "Casablanca";
+		 :hasEmail "ayoubEmail";
+		 :hasPhonenumber 11111;
+		 :hasAge 21;
+		 :hasmaritalStatus :Single;
+		 :hasCV :CV_AYOUB;
+		 :haslicenceDriver true.
+		 
+		 
+:CV_AYOUB 	rdf:type :CV;
+			:hasTitle "Intégrateur Web, Administrateur Systèmes";
+			:containsDiploma :Baccalaureat;
+			:containsDiploma :DUT;
+			:containsDiploma :LicencePRO;
+			:containsDiploma :MastereWEB;
+
+			:containsExperience :StageDeveloppeurASP;
+			:containsExperience :StageAdministrateurReseau;
+			:containsExperience :StageDeveloppeurWEB;
+			:containsExperience :AgentAccueil-Stadardiste;
+			:containsExperience :Surveillant-nuit;
+			
+			:containsInterest :Football;
+			:containsInterest :Music;
+			:containsInterest :Les_nouvelles_technologies;
+			
+			:containsCompetence :PHP;
+			:containsCompetence :NET;
+			:containsCompetence :SEMANTICWEB;
+			:containsCompetence :FRANCAIS;
+			:containsCompetence :ARABE;
+			:containsCompetence :ANGLAIS;
+			.
+
+:Baccalaureat 	rdf:type :diploma;
+			:studyLevel "BAC";
+			:inField "Physique Chimie";
+			:atUniversity :IBNOUMANDOUR;
+			:hasDate "2010";
+			.
+:IBNOUMANDOUR rdf:type :university.	
+
+:DUT 	rdf:type :diploma;
+			:studyLevel "BAC+2";
+			:inField "Administration des systèmes et réseaux";
+			:atUniversity :EST;
+			:hasDate "2012";
+			.
+:ESt rdf:type :university.	
+
+:LicencePRO 	rdf:type :diploma;
+			:studyLevel "Licence(BAC+3)";
+			:inField "Concepteur-integrateur des Systèmes Intranet/Internet";
+			:atUniversity :IUTNANCYCHARLEMAGNE;
+			:hasDate "2013";
+			.
+:IUTNANCYCHARLEMAGNE rdf:type :university. 		
+
+:MastereWEB 	rdf:type :diploma;
+			:studyLevel "BAC+5";
+			:inField "WEB";
+			:atUniversity :POLYTECH-NICE-SOPHIA-ANTIPOLIS;
+			:startATDate "2014";
+			:endATDate "2015";
+			.
+:POLYTECH-NICE-SOPHIA-ANTIPOLIS rdf:type :university.
+
+:MastereWEB :containsCourse :WebSemantic.
+:WebSemantic rdf:type :obligatoryCourse; :teachedBy :CATHERINE-FARON-ZUCKER; :followedBy :Ahmed;:followedBy :Ayoub;:followedBy :tounsi;:followedBy :Michele;
+:followedBy :david.
+:CATHERINE-FARON-ZUCKER rdf:type :teacher.
+:Ahmed rdf:type :student.
+:tounsi rdf:type :student.
+:Michele rdf:type :student.
+:david rdf:type :student.
+:Romain rdf:type :student.
+:POLO rdf:type :student.
+
+:MastereWEB :containsCourse :IngenierieConnaissance.
+:IngenierieConnaissance rdf:type :obligatoryCourse; :teachedBy :CATHERINE-FARON-ZUCKER; :followedBy :Ahmed;:followedBy :Ayoub;:followedBy :tounsi;:followedBy :Romain;
+:followedBy :POLO.
+
+:StageDeveloppeurASP rdf:type :internship;
+				:inCompany :ONE;
+				:hasOccupiedPosition "Developpeur Application Desktop ASP.NET";
+				:taskDone :DeveloppementAppForDesktop;
+				:startATDate "07-2011";
+				:endATDate "08-2011";
+				:inCountry :Maroc;
+				.
+:ONE rdf:type :company.
+:DeveloppementAppForDesktop rdf:type :task.
+:France rdf:type :country.
+
+:StageAdministrateurReseau rdf:type :internship;
+				:inCompany :OCP;
+				:hasOccupiedPosition "Administrateur Reseau";
+				:taskDone :Administration-Reseau;
+				:startATDate "04-2012";
+				:endATDate "06-2012";
+				:inCountry :Maroc;
+				.
+:OCP rdf:type :company.
+:Administration-Reseau rdf:type :task.
+
+:StageDeveloppeurWEB rdf:type :internship;
+				:inCompany :CCIDesVosges;
+				:hasOccupiedPosition "Developpeur Symfony 2";
+				:taskDone :DevelopementAnnuaireDesProduitsInstruels;
+				:startATDate "04-2013";
+				:endATDate "07-2013";
+				:inCountry :France;
+				.
+:CCIDesVosges rdf:type :company.
+:DevelopementAnnuaireDesProduitsInstruels rdf:type :task.
+
+:AgentAccueil-Stadardiste rdf:type :job;
+				:inCompany :CIV;
+				:hasOccupiedPosition "Agent d'accueil et Standardiste";
+				:taskDone :Accueil;
+				:startATDate "07-2014";
+				:endATDate "08-2014";
+				:inCountry :France;
+				.
+:Accueil rdf:type :task.
+
+:Surveillant-nuit rdf:type :job;
+				:inCompany :CIV;
+				:hasOccupiedPosition "Surveillant de nuit";
+				:taskDone :Surveillance;
+				:startATDate "09-2014";
+				:endATDate "06-2015";
+				:inCountry :France;
+				.
+:Surveillance rdf:type :task.
+			
+:Football rdf:type :interest.
+:Music rdf:type :interest.
+:Les_nouvelles_technologies rdf:type :interest.
+
+:PHP rdf:type :technicalCompetence; :haslevel "3 month experience".
+:NET rdf:type :technicalCompetence; :haslevel "2 month experience".
+:SEMANTICWEB rdf:type :technicalCompetence; :haslevel "Learning".
+
+:FRANCAIS rdf:type :languisticCompetence; :haslevel "Courant".
+:ARABE rdf:type :languisticCompetence; :haslevel "Langue maternelle".
+:ANGLAIS rdf:type :languisticCompetence; :haslevel "Intermédiaire".
