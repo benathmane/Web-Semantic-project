@@ -9,3 +9,6 @@ Travail à réaliser en binôme
         un CV ou une page décrivant la formation au format HTML contenant des métadonnées RDFa
         optionnellement: le même CV ou description de formation au format HTML5 contenant des microdata.
         optionnellement: un fichier d'objets JSON contenant des données RDF de votre CV ou description de formation
+
+		
+RQ: AYOUB , TU PEUT PRENDRE MON CV comme EXEMPLE , il utilise la RDFS créer. 
