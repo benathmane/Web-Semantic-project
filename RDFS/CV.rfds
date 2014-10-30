@@ -60,7 +60,7 @@
 <rdfs:Class rdf:ID="teacher" >
 	<rdfs:subClassOf rdf:resource="#Person"/>
 </rdfs:Class>
-<rdfs:Class rdf:ID="oligatoryCourse" >
+<rdfs:Class rdf:ID="obligatoryCourse" >
 	<rdfs:subClassOf rdf:resource="#course"/>
 </rdfs:Class>
 <rdfs:Class rdf:ID="optionalCourse" >
@@ -87,29 +87,29 @@
 	<rdfs:subPropertyOf rdf:resource='http://xmlns.com/foaf/0.1/familyName'/>
 	<rdfs:domain rdf:resource='#Person'/>
 	<rdfs:range rdf:resource='rdfs:Literal'/>
-	<rdfs:label xml:lang='fr'>a name </rdfs:label>
-	<rdfs:label xml:lang='en'>contains </rdfs:label>
+	<rdfs:label xml:lang='fr'>a un nom </rdfs:label>
+	<rdfs:label xml:lang='en'>has name </rdfs:label>
 </rdf:Property>
 
 <rdf:Property rdf:ID='hasLastname'>
 	<rdfs:subPropertyOf rdf:resource='http://xmlns.com/foaf/0.1/firstName'/>
 	<rdfs:domain rdf:resource='#Person'/>
 	<rdfs:range rdf:resource='rdfs:Literal'/>
-	<rdfs:label xml:lang='fr'>a prénom </rdfs:label>
+	<rdfs:label xml:lang='fr'>a un prénom </rdfs:label>
 	<rdfs:label xml:lang='en'>has lastName </rdfs:label>
 </rdf:Property>
 
 <rdf:Property rdf:ID='hasBirthDate'>
 	<rdfs:domain rdf:resource='#Person'/>
 	<rdfs:range rdf:resource='rdfs:Literal'/>
-	<rdfs:label xml:lang='fr'>a birthDate </rdfs:label>
+	<rdfs:label xml:lang='fr'>a un date de naissance</rdfs:label>
 	<rdfs:label xml:lang='en'>has birthDate </rdfs:label>
 </rdf:Property>
 
 <rdf:Property rdf:ID='hasAdress'>
 	<rdfs:domain rdf:resource='#Person'/>
 	<rdfs:range rdf:resource='rdfs:Literal'/>
-	<rdfs:label xml:lang='fr'>a adress </rdfs:label>
+	<rdfs:label xml:lang='fr'>a une adresse </rdfs:label>
 	<rdfs:label xml:lang='en'>has adress </rdfs:label>
 </rdf:Property>
 
@@ -123,7 +123,7 @@
 <rdf:Property rdf:ID='hasPhonenumber'>
 	<rdfs:domain rdf:resource='#Person'/>
 	<rdfs:range rdf:resource='rdfs:Literal'/>
-	<rdfs:label xml:lang='fr'>a phonenumber </rdfs:label>
+	<rdfs:label xml:lang='fr'>a numero de telephone</rdfs:label>
 	<rdfs:label xml:lang='en'>has phonenumber </rdfs:label>
 </rdf:Property>
 
@@ -170,7 +170,7 @@
 
 <rdf:Property rdf:ID='contains'>
 	<rdfs:domain rdf:resource='#CV'/>
-	</rdf:Property>
+</rdf:Property>
 
 <rdf:Property rdf:ID='containsDiploma'>
 	<rdfs:subPropertyOf rdf:resource='#contains'/>	
@@ -225,14 +225,12 @@
 	<rdfs:label xml:lang="fr">contient certification</rdfs:label>
 </rdf:Property>
 
-
 <rdf:Property rdf:ID='atUniversity'>
 	<rdfs:domain rdf:resource='#diploma'/>
 	<rdfs:range rdf:resource='#university'/>
 	<rdfs:label xml:lang="en">At university</rdfs:label>
 	<rdfs:label xml:lang="fr">à l'université</rdfs:label>
 </rdf:Property>
-
 
 <rdf:Property rdf:ID='hasLabel'>
 	<rdfs:range rdf:resource='rdfs:Literal'/>
@@ -259,9 +257,8 @@
 	<rdfs:domain rdf:resource='#training'/>
 	<rdfs:range rdf:resource='#trainingOrganization'/>
 	<rdfs:label xml:lang="en">in training Organization</rdfs:label>
-	<rdfs:label xml:lang="fr">dans l'organization de formation </rdfs:label>
+	<rdfs:label xml:lang="fr">dans l'organisation de formation </rdfs:label>
 </rdf:Property>
-
 
 <rdf:Property rdf:ID='haslevel'>
 	<rdfs:domain rdf:resource='#competence'/>
@@ -277,15 +274,12 @@
 	<rdfs:label xml:lang="fr">dans niveau d'etude </rdfs:label>
 </rdf:Property>
 
-
 <rdf:Property rdf:ID='inCompany'>
 	<rdfs:domain rdf:resource='#professionalExperience'/>
 	<rdfs:range rdf:resource='#company'/>
 	<rdfs:label xml:lang="en">in the company</rdfs:label>
 	<rdfs:label xml:lang="fr">au sein de l'entreprise </rdfs:label>
 </rdf:Property>
-
-
 
 <rdf:Property rdf:ID='inResearchLaboratory'>
 	<rdfs:domain rdf:resource='#professionalExperience'/>
@@ -308,7 +302,6 @@
 	<rdfs:label xml:lang="fr">tache réalisé</rdfs:label>
 </rdf:Property>
 
-
 <rdf:Property rdf:ID='containsCourse'>
 	<rdfs:domain rdf:resource='#diploma'/>
 	<rdfs:range rdf:resource='#course'/>
@@ -321,7 +314,6 @@
 	<rdfs:range rdf:resource='#teacher'/>
 	<rdfs:label xml:lang="en">teached by </rdfs:label>
 	<rdfs:label xml:lang="fr">enseigné par</rdfs:label>
-
 </rdf:Property>
 
 <rdf:Property rdf:ID='followedBy'>
@@ -330,7 +322,6 @@
 	<rdfs:label xml:lang="en">followed by </rdfs:label>
 	<rdfs:label xml:lang="fr">est suivi par</rdfs:label>
 </rdf:Property>
-
 
 <rdf:Property rdf:ID='hasTitle'>
 	<rdfs:domain rdf:resource='#CV'/>
