@@ -267,7 +267,7 @@
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#oligatoryCourse"
+        "value": "http://www.polytech.fr/websemantic/cv#obligatoryCourse"
       }
     ], 
     "http://www.polytech.fr/websemantic/cv#teachedBy": [
@@ -528,7 +528,7 @@
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Person"
+        "value": "http://www.polytech.fr/websemantic/cv#student"
       }
     ]
   }, 
@@ -624,7 +624,7 @@
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Person"
+        "value": "http://www.polytech.fr/websemantic/cv#student"
       }
     ]
   }, 
@@ -640,7 +640,7 @@
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Person"
+        "value": "http://www.polytech.fr/websemantic/cv#student"
       }
     ]
   }, 
@@ -786,7 +786,7 @@
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Person"
+        "value": "http://www.polytech.fr/websemantic/cv#student"
       }
     ]
   }, 
@@ -926,7 +926,7 @@
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Person"
+        "value": "http://www.polytech.fr/websemantic/cv#teacher"
       }
     ]
   }, 

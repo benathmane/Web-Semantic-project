@@ -169,10 +169,10 @@
     <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#university"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#tounsi">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#Person"/>
+    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#student"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#CATHRINE-FARON-ZUCKER">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#Person"/>
+    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#teacher"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#Swimming">
     <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#interest"/>
@@ -186,7 +186,7 @@
     <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#Ayoub"/>
     <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#Ahmed"/>
     <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#tounsi"/>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#oligatoryCourse"/>
+    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#obligatoryCourse"/>
     <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#Michele"/>
     <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#david"/>
   </rdf:Description>
@@ -197,7 +197,7 @@
     <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#trainingOrganization"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#Ayoub">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#Person"/>
+    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#student"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#Tunisie">
     <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#country"/>

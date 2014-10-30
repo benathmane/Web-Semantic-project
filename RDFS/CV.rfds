@@ -13,35 +13,48 @@
 <rdfs:Class rdf:ID="Person">
 	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
 </rdfs:Class>
+
 <rdfs:Class rdf:ID="CV"/>
+
 <rdfs:Class rdf:ID="diploma" />
+
 <rdfs:Class rdf:ID="training" />
+
 <rdfs:Class rdf:ID="trainingOrganization" />
+
 <rdfs:Class rdf:ID="certification" />
+
 <rdfs:Class rdf:ID="professionalExperience" />	
+
 <rdfs:Class rdf:ID="job" >
 	<rdfs:subClassOf rdf:resource="#professionalExperience"/>
 </rdfs:Class>
+
 <rdfs:Class rdf:ID="internship" >
 	<rdfs:subClassOf rdf:resource="#professionalExperience"/>
 </rdfs:Class>
+
 <rdfs:Class rdf:ID="competence" />
+
 <rdfs:Class rdf:ID="technicalCompetence">
 	<rdfs:subClassOf rdf:resource="#competence"/>
 </rdfs:Class>
+
 <rdfs:Class rdf:ID="languisticCompetence">
 	<rdfs:subClassOf rdf:resource="#competence"/>
 </rdfs:Class>
+
 <rdfs:Class rdf:ID="interest" />
+
 <rdfs:Class rdf:ID="reference" >
 	<rdfs:subClassOf rdf:resource="#Person"/>
 </rdfs:Class>
+
 <rdfs:Class rdf:ID="university" />
 
 <rdfs:Class rdf:ID="field" />
 
 <rdfs:Class rdf:ID="country" />
-
 
 <rdfs:Class rdf:ID="company" >
 	<rdfs:subClassOf rdf:resource="http://sw-portal.deri.org/ontologies/swportal#Company"/>
@@ -55,17 +68,20 @@
 
 <rdfs:Class rdf:ID="task" />
 
-
 <rdfs:Class rdf:ID="course" />
+
 <rdfs:Class rdf:ID="teacher" >
 	<rdfs:subClassOf rdf:resource="#Person"/>
 </rdfs:Class>
+
 <rdfs:Class rdf:ID="obligatoryCourse" >
 	<rdfs:subClassOf rdf:resource="#course"/>
 </rdfs:Class>
+
 <rdfs:Class rdf:ID="optionalCourse" >
 	<rdfs:subClassOf rdf:resource="#course"/>
 </rdfs:Class>
+
 <rdfs:Class rdf:ID="student" >
 	<rdfs:subClassOf rdf:resource="#Person"/>
 </rdfs:Class>
@@ -134,7 +150,6 @@
 	<rdfs:label xml:lang='en'>has age </rdfs:label>
 </rdf:Property>
 
-
 <rdf:Property rdf:ID='hasmaritalStatus'>
 	<rdfs:domain rdf:resource='#Person'/>
 	<rdfs:range rdf:resource="#MaritalStatus"/>
@@ -167,7 +182,6 @@
 	<rdfs:label xml:lang='en'>end at date </rdfs:label>
 </rdf:Property>
 
-
 <rdf:Property rdf:ID='contains'>
 	<rdfs:domain rdf:resource='#CV'/>
 </rdf:Property>
@@ -179,15 +193,12 @@
 	<rdfs:label xml:lang="fr">contient Diplome</rdfs:label>
 </rdf:Property>
 
-
 <rdf:Property rdf:ID='containsExperience'>
 	<rdfs:subPropertyOf rdf:resource='#contains'/>	
 	<rdfs:range rdf:resource='#professionalExperience'/>
 	<rdfs:label xml:lang="en">contains professional experience</rdfs:label>
 	<rdfs:label xml:lang="fr">contient experience professionelle</rdfs:label>
 </rdf:Property>
-
-
 
 <rdf:Property rdf:ID='containstraining'>
 	<rdfs:subPropertyOf rdf:resource='#contains'/>	
@@ -202,7 +213,6 @@
 	<rdfs:label xml:lang="en">contains interest</rdfs:label>
 	<rdfs:label xml:lang="fr">contient centre interet</rdfs:label>
 </rdf:Property>
-
 
 <rdf:Property rdf:ID='containsCompetence'>
 	<rdfs:subPropertyOf rdf:resource='#contains'/>	

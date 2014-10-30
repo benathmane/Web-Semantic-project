@@ -85,13 +85,13 @@
 :POLYTECH-NICE-SOPHIA-ANTIPOLIS rdf:type :university.
 
 :MastereWEB :containsCourse :WebSemantic.
-:WebSemantic rdf:type :oligatoryCourse; :teachedBy :CATHRINE-FARON-ZUCKER; :followedBy :Ahmed;:followedBy :Ayoub;:followedBy :tounsi;:followedBy :Michele;
+:WebSemantic rdf:type :obligatoryCourse; :teachedBy :CATHERINE-FARON-ZUCKER; :followedBy :Ahmed;:followedBy :Ayoub;:followedBy :tounsi;:followedBy :Michele;
 :followedBy :david.
-:CATHRINE-FARON-ZUCKER rdf:type :Person.
-:Ayoub rdf:type :Person.
-:tounsi rdf:type :Person.
-:Michele rdf:type :Person.
-:david rdf:type :Person.
+:CATHERINE-FARON-ZUCKER rdf:type :teacher.
+:Ayoub rdf:type :student.
+:tounsi rdf:type :student.
+:Michele rdf:type :student.
+:david rdf:type :student.
 
 :StageDeveloppeurJAVA rdf:type :internship;
 				:inCompany :SAP;
