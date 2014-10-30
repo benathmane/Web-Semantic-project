@@ -1,0 +1,192 @@
+@prefix : <http://www.polytech.fr/websemantic/cv#>.
+@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+
+
+:Ahmed rdf:type :Person;
+		 :hasName "Missaoui"^^xsd:string;
+		 :hasLastname "Ahmed"^^xsd:string;
+		 :hasBirthDate "1988-11-25"^^xsd:date;
+		 :hasAdress "Valbonne"^^xsd:string;
+		 :hasEmail "ahmedEmail"^^xsd:string;
+		 :hasPhonenumber "00000"^^xsd:Integer;
+		 :hasAge "26"^^xsd:Integer;
+		 :hasmaritalStatus :Single;
+		 :hasCV :CV_AHMED;
+		 :hascharateritic "sérieux"^^xsd:string;
+		 :hascharateritic "bosseur"^^xsd:string;
+		 :hascharateritic "autonome"^^xsd:string;
+		 
+		 :haslicenceDriver "true"^^xsd:boolean.
+		 
+		 
+:CV_AHMED 	rdf:type :CV;
+			:hasTitle "Ingenieur JAVA-JEE/BIG-DATA"^^xsd:string;
+			:hasSummary "Recherche Un stage PFE"^^xsd:string;
+			:containsDiploma :Licence;
+			:containsDiploma  :Baccalaureat;
+			:containsDiploma  :Ingenieur;
+			:containsDiploma  :MastereWEB;
+
+			:containsExperience :StageDeveloppeurJAVA;
+			:containsExperience :StageDeveloppeurBIGDATA;
+			:containsExperience :DeveloppeurFREELANCE;
+			:containsExperience :DeveloppeurJAVA;
+	
+	
+			:containscertification :CerificationJAVAOCAO;
+			:containscertification :CerificationCISCO1;
+			:containscertification :CerificationCISCO2;
+			
+			:containstraining :ApacheLucenneSolrTraining;
+			:containstraining :MachineLearning;
+			:containstraining :MongoDB;
+			:containstraining :DataMining;
+
+			:containsInterest :Football;
+			:containsInterest :Music;
+			:containsInterest :Swimming;
+			
+			:containsCompetence :JAVA;
+			:containsCompetence :BIGDATA;
+			:containsCompetence :HADOOP;
+			:containsCompetence :SEMANTICWEB;
+			:containsCompetence :INFORMATIONRETRIEVAL;
+			:containsCompetence :FRANCAIS;
+			:containsCompetence :ARABE;
+			:containsCompetence :ANGLAIS;
+			.
+
+:Licence 	rdf:type :diploma;
+			:studyLevel "Licence(BAC+3)"^^xsd:string;
+			:inField "ComputerScience"^^xsd:string;
+			:atUniversity :ESSTT;
+			:hasDate "2010"^^xsd:gYear;
+			.
+:ESSTT rdf:type :university. 	
+:Baccalaureat 	rdf:type :diploma;
+			:studyLevel "BAC"^^xsd:string;
+			:inField "Science Experimental"^^xsd:string;
+			:atUniversity :TAHAHSIN;
+			:hasDate "2007"^^xsd:gYear;
+			.
+:TAHAHSIN rdf:type :university.	
+:Ingenieur 	rdf:type :diploma;
+			:studyLevel "BAC+5"^^xsd:string;
+			:inField "ComputerScience"^^xsd:string;
+			:atUniversity :ESPRIT;
+			:hasDate "2013"^^xsd:gYear;
+			.
+:ESPRIT rdf:type :university.		
+
+:MastereWEB 	rdf:type :diploma;
+			:studyLevel "BAC+5"^^xsd:string;
+			:inField "WEB"^^xsd:string;
+			:atUniversity :POLYTECH-NICE-SOPHIA-ANTIPOLIS;
+			:startATDate "2014"^^xsd:gYear;
+			:endATDate "2015"^^xsd:gYear;
+			.
+:POLYTECH-NICE-SOPHIA-ANTIPOLIS rdf:type :university.
+
+:MastereWEB :containsCourse :WebSemantic.
+:WebSemantic rdf:type :obligatoryCourse; :teachedBy :CATHERINE-FARON-ZUCKER; :followedBy :Ahmed;:followedBy :Ayoub;:followedBy :tounsi;:followedBy :Michele;
+:followedBy :david ;  :hasProject :ProjectCV ; :hasMark "15"^^xsd:Integer ; .
+:CATHERINE-FARON-ZUCKER rdf:type :teacher.
+:Ayoub rdf:type :student.
+:tounsi rdf:type :student.
+:Michele rdf:type :student.
+:david rdf:type :student.
+:ProjectCV rdf:type :StudyProject.
+
+:MastereWEB :containsCourse :SOA.
+:SOA rdf:type :optionalCourse; :teachedBy :Mosser; :followedBy :Ahmed;:followedBy :Ayoub;:followedBy :tounsi;:followedBy :Michele;
+:followedBy :david ;:followedBy :francois;:followedBy :cathline;:followedBy :guillaume;  :hasProject :ProjectSOA ; :hasMark "16"^^xsd:Integer ; .
+:Mosser rdf:type :teacher.
+:francois rdf:type :student.
+:cathline rdf:type :student.
+:guillaume rdf:type :student.
+:ProjectSOA rdf:type :StudyProject.
+
+:MastereAL :containsCourse :ArchitectureLogicielle.
+:ArchitectureLogicielle rdf:type :obligatoryCourse; :teachedBy :Salvan; :followedBy :francois;:followedBy :cathline;:followedBy :guillaume;
+:hasProject :ProjectAL ; .
+:Salvan rdf:type :teacher.
+:ProjectAL rdf:type :StudyProject.
+
+
+:StageDeveloppeurJAVA rdf:type :internship;
+				:inCompany :SAP;
+				:hasOccupiedPosition "Developpeur Java"^^xsd:string;
+				:taskDone :DevellopementFrameworkJAVA-ABAP;
+				:startATDate "2013-03-01"^^xsd:date;
+				:endATDate "2013-08-01"^^xsd:date;
+				:inCountry :France;
+				.
+:SAP rdf:type :company.
+:DevellopementFrameworkJAVA-ABAP rdf:type :task.
+:France rdf:type :country.
+
+:StageDeveloppeurBIGDATA rdf:type :internship;
+				:inCompany :FRANCELABS;
+				:hasOccupiedPosition "Developpeur Java-BIG-DATA"^^xsd:string;
+				:taskDone :DevellopementFrameworkJAVA-BIGDATA;
+				:startATDate "2012-08-01"^^xsd:date;
+				:endATDate "2013-02-01"^^xsd:date;
+				:inCountry :France;
+				.
+:FRANCELABS rdf:type :company.
+:DevellopementFrameworkJAVA-BIGDATA rdf:type :task.
+
+
+:DeveloppeurFREELANCE rdf:type :job;
+				:inCompany :FRANCELABS;
+				:hasOccupiedPosition "Developpeur Java-information-Retrieval"^^xsd:string;
+				:taskDone :DevellopementFrameworkJAVA-information-Retrieval;
+				:startATDate "2013-02-01"^^xsd:date;
+				:endATDate "2013-03-01"^^xsd:date;
+				:inCountry :France;
+				.
+:DevellopementFrameworkJAVA-information-Retrieval rdf:type :task.
+				
+:DeveloppeurJAVA rdf:type :job;
+				:inCompany :CRYPTOLOG;
+				:hasOccupiedPosition "Developpeur Java-SECURITY"^^xsd:string;
+				:taskDone :DevellopementFrameworkJAVA-ECURITY;
+				:startATDate "2013-11-01"^^xsd:date;
+				:endATDate "2014-08-01"^^xsd:date;
+				:inCountry :Tunisie;
+				.
+:Tunisie rdf:type :country.
+:DevellopementFrameworkJAVA-ECURITY rdf:type :task.
+			
+:CerificationJAVAOCAO rdf:type :certification;:hasDate "2014"^^xsd:gYear.
+:CerificationCISCO1 rdf:type :certification;:hasDate "2012"^^xsd:gYear.
+:CerificationCISCO2 rdf:type :certification;:hasDate "2012"^^xsd:gYear.
+
+			
+:ApacheLucenneSolrTraining rdf:type :training;:hasDate "2013"^^xsd:gYear;:intrainingOrganization :FRANCELABS.
+:MachineLearning rdf:type :training;:hasDate "2014"^^xsd:gYear;:intrainingOrganization :STANFORDUNIVERSITY.
+:MongoDB rdf:type :training;:hasDate "2014"^^xsd:gYear;:intrainingOrganization :MONGODBCO.
+:DataMining rdf:type :training;:hasDate "2014"^^xsd:gYear;:intrainingOrganization :WEKA.
+:FRANCELABS rdf:type :trainingOrganization.
+:STANFORDUNIVERSITY rdf:type :trainingOrganization.
+:MONGODBCO rdf:type :trainingOrganization.
+:WEKA rdf:type :trainingOrganization.
+			
+			
+:Football rdf:type :interest.
+:Music rdf:type :interest.
+:Swimming rdf:type :interest.
+
+:JAVA rdf:type :technicalCompetence; :haslevel "Certified"^^xsd:string.
+:BIGDATA rdf:type :technicalCompetence; :haslevel "6 month experience"^^xsd:string.
+:HADOOP rdf:type :technicalCompetence; :haslevel "6 Month experience"^^xsd:string.
+:SEMANTICWEB rdf:type :technicalCompetence; :haslevel "Learning"^^xsd:string.
+:INFORMATIONRETRIEVAL rdf:type :technicalCompetence; :haslevel "Certified"^^xsd:string.
+
+:FRANCAIS rdf:type :languisticCompetence; :haslevel "BILLINGUE , C1 LEVEL"^^xsd:string.
+:ARABE rdf:type :languisticCompetence; :haslevel "NATIVE"^^xsd:string.
+:ANGLAIS rdf:type :languisticCompetence; :haslevel "FLUENT"^^xsd:string.
+
+			

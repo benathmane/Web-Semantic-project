@@ -69,6 +69,8 @@
 <rdfs:Class rdf:ID="task" />
 
 <rdfs:Class rdf:ID="course" />
+<rdfs:Class rdf:ID="StudyProject" />
+<rdfs:Class rdf:ID="courseMark" />
 
 <rdfs:Class rdf:ID="teacher" >
 	<rdfs:subClassOf rdf:resource="#Person"/>
@@ -339,4 +341,33 @@
 	<rdfs:label xml:lang="en">Title </rdfs:label>
 	<rdfs:label xml:lang="fr">titre du CV</rdfs:label>
 </rdf:Property>
+
+<rdf:Property rdf:ID='hasProject'>
+	<rdfs:domain rdf:resource='#course'/>
+	<rdfs:range rdf:resource='#StudyProject'/>
+	<rdfs:label xml:lang="en">has project </rdfs:label>
+	<rdfs:label xml:lang="fr">a un projet </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasMark'>
+	<rdfs:domain rdf:resource='#course'/>
+	<rdfs:range rdf:resource='#courseMark'/>
+	<rdfs:label xml:lang="en">has mark </rdfs:label>
+	<rdfs:label xml:lang="fr">a une note </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hascharateritic'>
+	<rdfs:domain rdf:resource='#Person'/>
+	<rdfs:range rdf:resource='rdfs:Literal'/>
+	<rdfs:label xml:lang="en">has charateritic </rdfs:label>
+	<rdfs:label xml:lang="fr">a un characteristique </rdfs:label>
+</rdf:Property>
+
+<rdf:Property rdf:ID='hasSummary'>
+	<rdfs:domain rdf:resource='#CV'/>
+	<rdfs:range rdf:resource='rdfs:Literal'/>
+	<rdfs:label xml:lang="en">has summary </rdfs:label>
+	<rdfs:label xml:lang="fr">a un résumé </rdfs:label>
+</rdf:Property>
+
 </rdf:RDF>
