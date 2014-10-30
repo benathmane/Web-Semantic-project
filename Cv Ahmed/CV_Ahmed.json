@@ -1,261 +1,50 @@
 {
-  "http://www.polytech.fr/websemantic/cv#HADOOP": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#technicalCompetence"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#haslevel": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "6 Month experience"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#CATHERINE-FARON-ZUCKER": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#teacher"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#ArchitectureLogicielle": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#obligatoryCourse"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#teachedBy": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Salvan"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#hasProject": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#ProjectAL"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#followedBy": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#francois"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#guillaume"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#cathline"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#MastereWEB": {
-    "http://www.polytech.fr/websemantic/cv#atUniversity": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#POLYTECH-NICE-SOPHIA-ANTIPOLIS"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#containsCourse": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#WebSemantic"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#SOA"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#startATDate": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
-        "type": "literal", 
-        "value": "2014"
-      }
-    ], 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#diploma"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#studyLevel": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "BAC+5"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#inField": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "WEB"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#endATDate": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
-        "type": "literal", 
-        "value": "2015"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#FRANCAIS": {
-    "http://www.polytech.fr/websemantic/cv#haslevel": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "BILLINGUE , C1 LEVEL"
-      }
-    ], 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#languisticCompetence"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#BIGDATA": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#technicalCompetence"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#haslevel": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "6 month experience"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#Tunisie": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#country"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#Baccalaureat": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#diploma"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#studyLevel": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "BAC"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#atUniversity": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#TAHAHSIN"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#inField": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "Science Experimental"
-      }
-    ], 
+  "http://www.polytech.fr/websemantic/cv#MachineLearning": {
     "http://www.polytech.fr/websemantic/cv#hasDate": [
       {
         "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
         "type": "literal", 
-        "value": "2007"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#DataMining": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#training"
+        "value": "2014"
       }
     ], 
     "http://www.polytech.fr/websemantic/cv#intrainingOrganization": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#WEKA"
+        "value": "http://www.polytech.fr/websemantic/cv#STANFORDUNIVERSITY"
       }
     ], 
-    "http://www.polytech.fr/websemantic/cv#hasDate": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
-        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#training"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#DeveloppeurFREELANCE": {
+    "http://www.polytech.fr/websemantic/cv#hasOccupiedPosition": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
         "type": "literal", 
-        "value": "2014"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-BIGDATA": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#task"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-ABAP": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#task"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#Salvan": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#teacher"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#FRANCELABS": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#trainingOrganization"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#company"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#DeveloppeurJAVA": {
-    "http://www.polytech.fr/websemantic/cv#taskDone": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-ECURITY"
+        "value": "Developpeur Java-information-Retrieval"
       }
     ], 
-    "http://www.polytech.fr/websemantic/cv#startATDate": [
+    "http://www.polytech.fr/websemantic/cv#endATDate": [
       {
         "datatype": "http://www.w3.org/2001/XMLSchema#date", 
         "type": "literal", 
-        "value": "2013-11-01"
+        "value": "2013-03-01"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#inCompany": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#FRANCELABS"
       }
     ], 
     "http://www.polytech.fr/websemantic/cv#inCountry": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Tunisie"
+        "value": "http://www.polytech.fr/websemantic/cv#France"
       }
     ], 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
@@ -264,90 +53,137 @@
         "value": "http://www.polytech.fr/websemantic/cv#job"
       }
     ], 
-    "http://www.polytech.fr/websemantic/cv#inCompany": [
+    "http://www.polytech.fr/websemantic/cv#startATDate": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#date", 
+        "type": "literal", 
+        "value": "2013-02-01"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#taskDone": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#CRYPTOLOG"
+        "value": "http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-information-Retrieval"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-information-Retrieval": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#task"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#Ayoub": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#student"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#StageDeveloppeurBIGDATA": {
+    "http://www.polytech.fr/websemantic/cv#hasOccupiedPosition": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "Developpeur Java-BIG-DATA"
       }
     ], 
     "http://www.polytech.fr/websemantic/cv#endATDate": [
       {
         "datatype": "http://www.w3.org/2001/XMLSchema#date", 
         "type": "literal", 
-        "value": "2014-08-01"
+        "value": "2013-02-01"
       }
     ], 
-    "http://www.polytech.fr/websemantic/cv#hasOccupiedPosition": [
+    "http://www.polytech.fr/websemantic/cv#inCompany": [
       {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "Developpeur Java-SECURITY"
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#FRANCELABS"
       }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#Licence": {
+    ], 
+    "http://www.polytech.fr/websemantic/cv#startATDate": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#date", 
+        "type": "literal", 
+        "value": "2012-08-01"
+      }
+    ], 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#diploma"
+        "value": "http://www.polytech.fr/websemantic/cv#internship"
       }
     ], 
-    "http://www.polytech.fr/websemantic/cv#studyLevel": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "Licence(BAC+3)"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#atUniversity": [
+    "http://www.polytech.fr/websemantic/cv#inCountry": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#ESSTT"
+        "value": "http://www.polytech.fr/websemantic/cv#France"
       }
     ], 
-    "http://www.polytech.fr/websemantic/cv#inField": [
+    "http://www.polytech.fr/websemantic/cv#taskDone": [
       {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "ComputerScience"
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-BIGDATA"
       }
-    ], 
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-ECURITY": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#task"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#ApacheLucenneSolrTraining": {
     "http://www.polytech.fr/websemantic/cv#hasDate": [
       {
         "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
         "type": "literal", 
-        "value": "2010"
+        "value": "2013"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#intrainingOrganization": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#FRANCELABS"
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#training"
       }
     ]
   }, 
-  "http://www.polytech.fr/websemantic/cv#WebSemantic": {
-    "http://www.polytech.fr/websemantic/cv#hasMark": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#Integer", 
-        "type": "literal", 
-        "value": "15"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#teachedBy": [
+  "http://www.polytech.fr/websemantic/cv#cathline": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#CATHERINE-FARON-ZUCKER"
+        "value": "http://www.polytech.fr/websemantic/cv#student"
       }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#hasProject": [
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#France": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#ProjectCV"
+        "value": "http://www.polytech.fr/websemantic/cv#country"
       }
-    ], 
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#SOA": {
     "http://www.polytech.fr/websemantic/cv#followedBy": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#david"
+        "value": "http://www.polytech.fr/websemantic/cv#francois"
       }, 
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Ayoub"
+        "value": "http://www.polytech.fr/websemantic/cv#Ahmed"
       }, 
       {
         "type": "uri", 
@@ -355,103 +191,68 @@
       }, 
       {
         "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#guillaume"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#david"
+      }, 
+      {
+        "type": "uri", 
         "value": "http://www.polytech.fr/websemantic/cv#tounsi"
       }, 
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Ahmed"
+        "value": "http://www.polytech.fr/websemantic/cv#cathline"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#Ayoub"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#teachedBy": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#Mosser"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#hasMark": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#Integer", 
+        "type": "literal", 
+        "value": "16"
       }
     ], 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#obligatoryCourse"
+        "value": "http://www.polytech.fr/websemantic/cv#optionalCourse"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#hasProject": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#ProjectSOA"
       }
     ]
   }, 
-  "http://www.polytech.fr/websemantic/cv#STANFORDUNIVERSITY": {
+  "http://www.polytech.fr/websemantic/cv#ProjectCV": {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#trainingOrganization"
+        "value": "http://www.polytech.fr/websemantic/cv#StudyProject"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#Michele": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#student"
       }
     ]
   }, 
   "http://www.polytech.fr/websemantic/cv#Ahmed": {
-    "http://www.polytech.fr/websemantic/cv#hasAge": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#Integer", 
-        "type": "literal", 
-        "value": "26"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#hasCV": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#CV_AHMED"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#hasBirthDate": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#date", 
-        "type": "literal", 
-        "value": "1988-11-25"
-      }
-    ], 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Person"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#hasAdress": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "Valbonne"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#hasEmail": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "ahmedEmail"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#hasmaritalStatus": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Single"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#hasLastname": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "Ahmed"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#hasName": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "Missaoui"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#haslicenceDriver": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#boolean", 
-        "type": "literal", 
-        "value": "true"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#hasPhonenumber": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#Integer", 
-        "type": "literal", 
-        "value": "00000"
-      }
-    ], 
     "http://www.polytech.fr/websemantic/cv#hascharateritic": [
       {
         "datatype": "http://www.w3.org/2001/XMLSchema#string", 
@@ -468,145 +269,79 @@
         "type": "literal", 
         "value": "bosseur"
       }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#TAHAHSIN": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    ], 
+    "http://www.polytech.fr/websemantic/cv#hasPhonenumber": [
       {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#university"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#Mosser": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#teacher"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#WEKA": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#trainingOrganization"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#tounsi": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#student"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#Swimming": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#interest"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#ARABE": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#languisticCompetence"
+        "datatype": "http://www.w3.org/2001/XMLSchema#Integer", 
+        "type": "literal", 
+        "value": "00000"
       }
     ], 
-    "http://www.polytech.fr/websemantic/cv#haslevel": [
+    "http://www.polytech.fr/websemantic/cv#hasAge": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#Integer", 
+        "type": "literal", 
+        "value": "26"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#hasName": [
       {
         "datatype": "http://www.w3.org/2001/XMLSchema#string", 
         "type": "literal", 
-        "value": "NATIVE"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#CerificationCISCO1": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#certification"
+        "value": "Missaoui"
       }
     ], 
-    "http://www.polytech.fr/websemantic/cv#hasDate": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
-        "type": "literal", 
-        "value": "2012"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#CerificationCISCO2": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#certification"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#hasDate": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
-        "type": "literal", 
-        "value": "2012"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#ProjectSOA": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#StudyProject"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#Football": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#interest"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#ProjectAL": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#StudyProject"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#POLYTECH-NICE-SOPHIA-ANTIPOLIS": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#university"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#INFORMATIONRETRIEVAL": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#technicalCompetence"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#haslevel": [
+    "http://www.polytech.fr/websemantic/cv#hasLastname": [
       {
         "datatype": "http://www.w3.org/2001/XMLSchema#string", 
         "type": "literal", 
-        "value": "Certified"
+        "value": "Ahmed"
       }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#ESSTT": {
+    ], 
+    "http://www.polytech.fr/websemantic/cv#hasEmail": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "ahmedEmail"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#hasAdress": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "Valbonne"
+      }
+    ], 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#university"
+        "value": "http://www.polytech.fr/websemantic/cv#Person"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#hasBirthDate": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#date", 
+        "type": "literal", 
+        "value": "1988-11-25"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#haslicenceDriver": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#boolean", 
+        "type": "literal", 
+        "value": "true"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#hasCV": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#CV_AHMED"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#hasmaritalStatus": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#Single"
       }
     ]
   }, 
@@ -618,387 +353,12 @@
       }
     ]
   }, 
-  "http://www.polytech.fr/websemantic/cv#SAP": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#company"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#Michele": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#student"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#ProjectCV": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#StudyProject"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#DeveloppeurFREELANCE": {
-    "http://www.polytech.fr/websemantic/cv#taskDone": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-information-Retrieval"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#inCountry": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#France"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#startATDate": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#date", 
-        "type": "literal", 
-        "value": "2013-02-01"
-      }
-    ], 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#job"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#inCompany": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#FRANCELABS"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#endATDate": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#date", 
-        "type": "literal", 
-        "value": "2013-03-01"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#hasOccupiedPosition": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "Developpeur Java-information-Retrieval"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#France": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#country"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#cathline": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#student"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#SEMANTICWEB": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#technicalCompetence"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#haslevel": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "Learning"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#ApacheLucenneSolrTraining": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#training"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#intrainingOrganization": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#FRANCELABS"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#hasDate": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
-        "type": "literal", 
-        "value": "2013"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-ECURITY": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#task"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#SOA": {
-    "http://www.polytech.fr/websemantic/cv#hasMark": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#Integer", 
-        "type": "literal", 
-        "value": "16"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#teachedBy": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Mosser"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#hasProject": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#ProjectSOA"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#followedBy": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#david"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#francois"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#tounsi"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Ayoub"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Michele"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#guillaume"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#cathline"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Ahmed"
-      }
-    ], 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#optionalCourse"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#StageDeveloppeurBIGDATA": {
-    "http://www.polytech.fr/websemantic/cv#taskDone": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-BIGDATA"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#startATDate": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#date", 
-        "type": "literal", 
-        "value": "2012-08-01"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#inCountry": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#France"
-      }
-    ], 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#internship"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#inCompany": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#FRANCELABS"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#endATDate": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#date", 
-        "type": "literal", 
-        "value": "2013-02-01"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#hasOccupiedPosition": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "Developpeur Java-BIG-DATA"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#Ayoub": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#student"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-information-Retrieval": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#task"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#MachineLearning": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#training"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#intrainingOrganization": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#STANFORDUNIVERSITY"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#hasDate": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
-        "type": "literal", 
-        "value": "2014"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#MongoDB": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#training"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#intrainingOrganization": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#MONGODBCO"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#hasDate": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
-        "type": "literal", 
-        "value": "2014"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#guillaume": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#student"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#JAVA": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#technicalCompetence"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#haslevel": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "Certified"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#CerificationJAVAOCAO": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#certification"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#hasDate": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
-        "type": "literal", 
-        "value": "2014"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#MONGODBCO": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#trainingOrganization"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#Music": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#interest"
-      }
-    ]
-  }, 
   "http://www.polytech.fr/websemantic/cv#StageDeveloppeurJAVA": {
-    "http://www.polytech.fr/websemantic/cv#taskDone": [
+    "http://www.polytech.fr/websemantic/cv#hasOccupiedPosition": [
       {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-ABAP"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#startATDate": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#date", 
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
         "type": "literal", 
-        "value": "2013-03-01"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#inCountry": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#France"
-      }
-    ], 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#internship"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#inCompany": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#SAP"
+        "value": "Developpeur Java"
       }
     ], 
     "http://www.polytech.fr/websemantic/cv#endATDate": [
@@ -1008,19 +368,102 @@
         "value": "2013-08-01"
       }
     ], 
-    "http://www.polytech.fr/websemantic/cv#hasOccupiedPosition": [
+    "http://www.polytech.fr/websemantic/cv#inCompany": [
       {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "Developpeur Java"
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#SAP"
       }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#francois": {
+    ], 
+    "http://www.polytech.fr/websemantic/cv#startATDate": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#date", 
+        "type": "literal", 
+        "value": "2013-03-01"
+      }
+    ], 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#student"
+        "value": "http://www.polytech.fr/websemantic/cv#internship"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#inCountry": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#France"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#taskDone": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-ABAP"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#CRYPTOLOG": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#company"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#MastereAL": {
+    "http://www.polytech.fr/websemantic/cv#containsCourse": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#ArchitectureLogicielle"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#Ingenieur": {
+    "http://www.polytech.fr/websemantic/cv#hasDate": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
+        "type": "literal", 
+        "value": "2013"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#inField": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "ComputerScience"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#atUniversity": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#ESPRIT"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#studyLevel": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "BAC+5"
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#diploma"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#ProjectAL": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#StudyProject"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#ESPRIT": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#university"
       }
     ]
   }, 
@@ -1039,32 +482,67 @@
       }
     ]
   }, 
-  "http://www.polytech.fr/websemantic/cv#ESPRIT": {
+  "http://www.polytech.fr/websemantic/cv#francois": {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#university"
+        "value": "http://www.polytech.fr/websemantic/cv#student"
       }
     ]
   }, 
-  "http://www.polytech.fr/websemantic/cv#Ingenieur": {
+  "http://www.polytech.fr/websemantic/cv#Music": {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#diploma"
+        "value": "http://www.polytech.fr/websemantic/cv#interest"
       }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#studyLevel": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "BAC+5"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#atUniversity": [
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#MONGODBCO": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#ESPRIT"
+        "value": "http://www.polytech.fr/websemantic/cv#trainingOrganization"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#CerificationJAVAOCAO": {
+    "http://www.polytech.fr/websemantic/cv#hasDate": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
+        "type": "literal", 
+        "value": "2014"
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#certification"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#CATHERINE-FARON-ZUCKER": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#teacher"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#Mosser": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#teacher"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#Licence": {
+    "http://www.polytech.fr/websemantic/cv#hasDate": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
+        "type": "literal", 
+        "value": "2010"
       }
     ], 
     "http://www.polytech.fr/websemantic/cv#inField": [
@@ -1074,107 +552,471 @@
         "value": "ComputerScience"
       }
     ], 
-    "http://www.polytech.fr/websemantic/cv#hasDate": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
-        "type": "literal", 
-        "value": "2013"
-      }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#MastereAL": {
-    "http://www.polytech.fr/websemantic/cv#containsCourse": [
+    "http://www.polytech.fr/websemantic/cv#atUniversity": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#ArchitectureLogicielle"
+        "value": "http://www.polytech.fr/websemantic/cv#ESSTT"
       }
-    ]
-  }, 
-  "http://www.polytech.fr/websemantic/cv#CV_AHMED": {
-    "http://www.polytech.fr/websemantic/cv#hasSummary": [
+    ], 
+    "http://www.polytech.fr/websemantic/cv#studyLevel": [
       {
         "datatype": "http://www.w3.org/2001/XMLSchema#string", 
         "type": "literal", 
-        "value": "Recherche Un stage PFE"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#containsCompetence": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#FRANCAIS"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#HADOOP"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#ARABE"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#BIGDATA"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#INFORMATIONRETRIEVAL"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#SEMANTICWEB"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#JAVA"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#ANGLAIS"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#hasTitle": [
-      {
-        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
-        "type": "literal", 
-        "value": "Ingenieur JAVA-JEE/BIG-DATA"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#containscertification": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#CerificationJAVAOCAO"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#CerificationCISCO2"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#CerificationCISCO1"
-      }
-    ], 
-    "http://www.polytech.fr/websemantic/cv#containsDiploma": [
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Licence"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Baccalaureat"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#MastereWEB"
-      }, 
-      {
-        "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Ingenieur"
+        "value": "Licence(BAC+3)"
       }
     ], 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#CV"
+        "value": "http://www.polytech.fr/websemantic/cv#diploma"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#DeveloppeurJAVA": {
+    "http://www.polytech.fr/websemantic/cv#hasOccupiedPosition": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "Developpeur Java-SECURITY"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#endATDate": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#date", 
+        "type": "literal", 
+        "value": "2014-08-01"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#inCompany": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#CRYPTOLOG"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#startATDate": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#date", 
+        "type": "literal", 
+        "value": "2013-11-01"
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#job"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#inCountry": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#Tunisie"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#taskDone": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-ECURITY"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#FRANCELABS": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#trainingOrganization"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#company"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#Salvan": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#teacher"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-ABAP": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#task"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-BIGDATA": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#task"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#DataMining": {
+    "http://www.polytech.fr/websemantic/cv#hasDate": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
+        "type": "literal", 
+        "value": "2014"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#intrainingOrganization": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#WEKA"
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#training"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#Baccalaureat": {
+    "http://www.polytech.fr/websemantic/cv#hasDate": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
+        "type": "literal", 
+        "value": "2007"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#inField": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "Science Experimental"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#atUniversity": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#TAHAHSIN"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#studyLevel": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "BAC"
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#diploma"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#Tunisie": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#country"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#BIGDATA": {
+    "http://www.polytech.fr/websemantic/cv#haslevel": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "6 month experience"
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#technicalCompetence"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#FRANCAIS": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#languisticCompetence"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#haslevel": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "BILLINGUE , C1 LEVEL"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#guillaume": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#student"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#ArchitectureLogicielle": {
+    "http://www.polytech.fr/websemantic/cv#followedBy": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#guillaume"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#francois"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#cathline"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#teachedBy": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#Salvan"
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#obligatoryCourse"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#hasProject": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#ProjectAL"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#JAVA": {
+    "http://www.polytech.fr/websemantic/cv#haslevel": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "Certified"
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#technicalCompetence"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#HADOOP": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#technicalCompetence"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#haslevel": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "6 Month experience"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#ESSTT": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#university"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#INFORMATIONRETRIEVAL": {
+    "http://www.polytech.fr/websemantic/cv#haslevel": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "Certified"
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#technicalCompetence"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#POLYTECH-NICE-SOPHIA-ANTIPOLIS": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#university"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#SEMANTICWEB": {
+    "http://www.polytech.fr/websemantic/cv#haslevel": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "Learning"
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#technicalCompetence"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#ProjectSOA": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#StudyProject"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#CerificationCISCO2": {
+    "http://www.polytech.fr/websemantic/cv#hasDate": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
+        "type": "literal", 
+        "value": "2012"
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#certification"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#CerificationCISCO1": {
+    "http://www.polytech.fr/websemantic/cv#hasDate": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
+        "type": "literal", 
+        "value": "2012"
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#certification"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#Football": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#interest"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#ARABE": {
+    "http://www.polytech.fr/websemantic/cv#haslevel": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "NATIVE"
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#languisticCompetence"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#Swimming": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#interest"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#tounsi": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#student"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#MastereWEB": {
+    "http://www.polytech.fr/websemantic/cv#endATDate": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
+        "type": "literal", 
+        "value": "2015"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#inField": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "WEB"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#studyLevel": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "BAC+5"
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#diploma"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#startATDate": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
+        "type": "literal", 
+        "value": "2014"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#containsCourse": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#SOA"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#WebSemantic"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#atUniversity": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#POLYTECH-NICE-SOPHIA-ANTIPOLIS"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#WEKA": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#trainingOrganization"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#CV_AHMED": {
+    "http://www.polytech.fr/websemantic/cv#containsInterest": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#Swimming"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#Football"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#Music"
       }
     ], 
     "http://www.polytech.fr/websemantic/cv#containstraining": [
@@ -1195,14 +1037,100 @@
         "value": "http://www.polytech.fr/websemantic/cv#MongoDB"
       }
     ], 
-    "http://www.polytech.fr/websemantic/cv#containsExperience": [
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#StageDeveloppeurBIGDATA"
+        "value": "http://www.polytech.fr/websemantic/cv#CV"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#containscertification": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#CerificationJAVAOCAO"
       }, 
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#DeveloppeurJAVA"
+        "value": "http://www.polytech.fr/websemantic/cv#CerificationCISCO1"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#CerificationCISCO2"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#hasTitle": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "Ingenieur JAVA-JEE/BIG-DATA"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#containsDiploma": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#MastereWEB"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#Baccalaureat"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#Licence"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#Ingenieur"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#containsCompetence": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#HADOOP"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#FRANCAIS"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#INFORMATIONRETRIEVAL"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#ARABE"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#SEMANTICWEB"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#BIGDATA"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#ANGLAIS"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#JAVA"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#hasSummary": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "Recherche Un stage PFE"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#containsExperience": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#StageDeveloppeurJAVA"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#StageDeveloppeurBIGDATA"
       }, 
       {
         "type": "uri", 
@@ -1210,21 +1138,101 @@
       }, 
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#StageDeveloppeurJAVA"
+        "value": "http://www.polytech.fr/websemantic/cv#DeveloppeurJAVA"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#SAP": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#company"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#TAHAHSIN": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#university"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#MongoDB": {
+    "http://www.polytech.fr/websemantic/cv#hasDate": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#gYear", 
+        "type": "literal", 
+        "value": "2014"
       }
     ], 
-    "http://www.polytech.fr/websemantic/cv#containsInterest": [
+    "http://www.polytech.fr/websemantic/cv#intrainingOrganization": [
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Swimming"
+        "value": "http://www.polytech.fr/websemantic/cv#MONGODBCO"
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#training"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#STANFORDUNIVERSITY": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#trainingOrganization"
+      }
+    ]
+  }, 
+  "http://www.polytech.fr/websemantic/cv#WebSemantic": {
+    "http://www.polytech.fr/websemantic/cv#followedBy": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#Ayoub"
       }, 
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Football"
+        "value": "http://www.polytech.fr/websemantic/cv#Ahmed"
       }, 
       {
         "type": "uri", 
-        "value": "http://www.polytech.fr/websemantic/cv#Music"
+        "value": "http://www.polytech.fr/websemantic/cv#Michele"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#tounsi"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#david"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#teachedBy": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#CATHERINE-FARON-ZUCKER"
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#obligatoryCourse"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#hasMark": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#Integer", 
+        "type": "literal", 
+        "value": "15"
+      }
+    ], 
+    "http://www.polytech.fr/websemantic/cv#hasProject": [
+      {
+        "type": "uri", 
+        "value": "http://www.polytech.fr/websemantic/cv#ProjectCV"
       }
     ]
   }

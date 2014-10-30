@@ -158,6 +158,7 @@
 				:inCountry :Tunisie;
 				.
 :Tunisie rdf:type :country.
+:CRYPTOLOG rdf:type :company.
 :DevellopementFrameworkJAVA-ECURITY rdf:type :task.
 			
 :CerificationJAVAOCAO rdf:type :certification;:hasDate "2014"^^xsd:gYear.
