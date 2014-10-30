@@ -331,4 +331,11 @@
 	<rdfs:label xml:lang="fr">est suivi par</rdfs:label>
 </rdf:Property>
 
+
+<rdf:Property rdf:ID='hasTitle'>
+	<rdfs:domain rdf:resource='#CV'/>
+	<rdfs:range rdf:resource='rdfs:Literal'/>
+	<rdfs:label xml:lang="en">Title </rdfs:label>
+	<rdfs:label xml:lang="fr">titre du CV</rdfs:label>
+</rdf:Property>
 </rdf:RDF>
