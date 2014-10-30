@@ -233,6 +233,10 @@
     <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#task"/>
   </rdf:Description>
 
+  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#CIV">
+    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#company"/>
+  </rdf:Description>
+
   <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#FRANCAIS">
     <haslevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Courant</haslevel>
     <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#languisticCompetence"/>

@@ -159,6 +159,7 @@
 				:inCountry :France;
 				.
 :Surveillance rdf:type :task.
+:CIV rdf:type :company.
 			
 :Football rdf:type :interest.
 :Music rdf:type :interest.
