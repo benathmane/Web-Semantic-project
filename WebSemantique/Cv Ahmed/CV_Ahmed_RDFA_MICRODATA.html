@@ -31,17 +31,17 @@
 			</center>
 			<br/><br/>
 			<div class="block">
-	<h1><span itemprop="name">MISSAOUI</span>
-	<span>Ahmed</span></span></h1>
+	<h1><span itemprop="Name">MISSAOUI</span>
+	<span  itemprop="givenName">Ahmed</span></h1>
 			
 	<b>Adresse : </b><span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address"><span itemprop="locality"  translate="no">Valbonne</span></span><br/>
 	<b>Age : </b>26<br/>
 	<b>Email : </b><span itemprop="email">ahmedEmail</span><br/>
 	<b>Numero Telephone : </b><span itemprop="telephone">00000</span><br/>
-	<b>Date de Naissance : </b>1988-11-25<br/>
+	<b>Date de Naissance : </b><span itemprop="birthDate">1988-11-25</span><br/>
 	<b>Permis de conduire : </b>Oui<br/>
 	<b>Situation Familialle : </b>Celibataire<br/>	
-	<span itemprop="text"><b>Charateristiques : </b>Autonome, Serieux, Bosseur</span>.
+	<b>Charateristiques : </b><span itemprop="skills">Autonome, Serieux, Bosseur</span>.
   
     
    
@@ -50,10 +50,11 @@
 			<h4><header>DIPLOMES</header></h4>
     <ul>
 		<dl>
-		<b>[2015 - 2014]</b> : Master 2 IFI : Parcours WEB
+		<span itemprop="educationalOrganization" itemscope itemtype="http://schema.org/EducationalOrganization" >
+		<b>[<time itemprop="endDate">2015</time> - <time itemprop="startDate">2014</time>]</b> : <span itemprop="title">Master 2 IFI : Parcours WEB</span>
 			<dd>
         <a  href="http://www.polytechnice.fr/" itemprop="affiliation">
-		Ecole Polytech Nice-Sophia</a>, Nice, France.
+		Ecole Polytech Nice-Sophia</a>, <span itemprop="location">Nice, France</span>.
         
         
         <dd>
@@ -61,33 +62,34 @@
         SOA, 
         WebSemantic</dd>
       </span>
-    </span>
 	</dd>
 		
-
-	<b>[2013]</b> :
-     Ingenieur
-			ComputerScience
+	<span itemprop="educationalOrganization" itemscope itemtype="http://schema.org/EducationalOrganization">
+	<b>[<time itemprop="endDate">2013</time>]</b> :
+    <span itemprop="title"> Ingenieur
+			ComputerScience</span>
 			<dd>
-        <a href="http://www.esprit.ens.tn/test/v3/index.php?lang=fr">ESPRIT</a>, Tunisie.
+        <a href="http://www.esprit.ens.tn/test/v3/index.php?lang=fr" itemprop="affiliation">ESPRIT</a>, <span itemprop="location">Tunisie</span>.
 
 	</dd>
-   
-			<b>[2010]</b> :
-      Licence
-       Computer Science
+	</Span>
+   <span itemprop="educationalOrganization" itemscope itemtype="http://schema.org/EducationalOrganization">
+			<b>[<time itemprop="endDate">2010</time>]</b> :
+      <span itemprop="title">Licence
+       Computer Science</span>
 			<dd>
-       ESSTT, Tunisie.
-      
+       <span itemprop="affiliation">ESSTT</span>, <span itemprop="location">Tunisie</span>.
+      </dd>
     </span>
-   </dd>
-	 
-	     <b>[2007]</b> :
-      Baccalaureat
-        Science Experimental
-       <dd>TAHAHSIN, Tunisie.
+   
+	 <span itemprop="educationalOrganization" itemscope itemtype="http://schema.org/EducationalOrganization">
+	     <b>[<time itemprop="endDate">2007</time>]</b> :
+      <span itemprop="title">Baccalaureat
+        Science Experimental</span>
+       <dd><span itemprop="affiliation">TAHAHSIN</span>, <span itemprop="location">Tunisie</span>.
         
 	</dd>
+	</span>
 	 </dl>
    </ul>
 	 
@@ -122,63 +124,63 @@
 	</ul>
 	
 	    <!-- ----------------------------------------------------------------- Experiences ----------------------------------------------------->
-    			<section id="experinces" itemprop="jobPosting" itemscope itemtype="http://data-vocabulary.org/JobPosting">
+    			<section id="experinces">
 			<h4><header>EXPERIENCES PROFESSIONNELLES</header></h4>
     <dl>
 		<dd>
-      <details>
+      <details itemprop="jobPosting" itemscope itemtype="http://schema.org/JobPosting">
      <summary>
 				<B>[<time itemprop="startDate">2013-11-01</time> - 
 				<time itemprop="endDate">2014-08-01</time>]</B>
-				: Developpeur JAVA</summary>
-        <B>Poste : </B>Developpeur Java-SECURITY<br/>
-        <B>Tache : </B>Developement FrameworkJAVA-ECURITY  <br/>     
-				<B>Entreprise : </B><a href="https://www.cryptolog.com/fr/">CRYPTOLOG</a><br/>  
-        <B>Pays : </B>Tunisie<br/>  
+				: <span itemprop="title">Developpeur JAVA</span></summary>
+        <B>Poste : </B><span itemprop="employmentType">Developpeur Java-SECURITY</span><br/>
+        <B>Tache : </B><span itemprop="skills">Developement FrameworkJAVA-ECURITY  </span><br/>     
+				<B>Entreprise : </B><a href="https://www.cryptolog.com/fr/" itemprop="hiringOrganization">CRYPTOLOG</a><br/>  
+        <B>Pays : </B><span itemprop="jobLocation">Tunisie</span><br/>  
 		
 	</dd>
 	</details><br/>
     
 	<dd>
-			<details>
+			<details itemprop="jobPosting" itemscope itemtype="http://schema.org/JobPosting">
      <summary> 
-				<B>[<time itemprop="startDate">2013-03-01</time></div> - 
+				<B>[<time itemprop="startDate">2013-03-01</time> - 
 				<time itemprop="endDate">2013-08-01</time>]</B>
-				: <span itemprop="employmentType">Stage Developpeur JAVA</span></summary>
+				: <span itemprop="title">Stage Developpeur JAVA</span></summary>
 
-        <B>Poste : </B>Developpeur Java<br/>  
-						<B>Tache : </B><Developement Framework JAVA-ABAP</span><br/>  
-				<B>Entreprise: </B><a href="http://www.sap.com/index.html">SAP</a><br/>  
-			  <B>Pays : </B>France<br/>  
+        <B>Poste : </B><span itemprop="employmentType">Developpeur Java</span><br/>  
+						<B>Tache : </B><span itemprop="skills">Developement Framework JAVA-ABAP</span><br/>  
+				<B>Entreprise: </B><a href="http://www.sap.com/index.html" itemprop="hiringOrganization">SAP</a><br/>  
+			  <B>Pays : </B><span itemprop="jobLocation">France</span><br/>  
 		</dd>
 		</details><br/>
 	
 	       <dd> 
-      <details>
+      <details itemprop="jobPosting" itemscope itemtype="http://schema.org/JobPosting">
      <summary> 
 				<B>[<time itemprop="startDate">2013-02-01</time> - 
 				<time itemprop="endDate">2013-03-01</time>]</B>
-				: <span itemprop="employmentType">Developpeur FREELANCE</span></summary>
-        <B>Poste : </B>Developpeur Java-information-Retrieval
-				<B>Tache : </B>Developement Framework JAVA-information-Retrieval    <br/>    
-        <B>Entreprise : </B><a href="http://www.francelabs.com/">FRANCELABS</a>  <br/>      
-		<B>Pays : </B>France<br/>  
+				: <span itemprop="title">Developpeur FREELANCE</span></summary>
+        <B>Poste : </B><span itemprop="employmentType">Developpeur Java-information-Retrieval</span><br/>
+				<B>Tache : </B><span itemprop="skills">Developement Framework JAVA-information-Retrieval   </span> <br/>    
+        <B>Entreprise : </B><a href="http://www.francelabs.com/" itemprop="hiringOrganization">FRANCELABS</a>  <br/>      
+		<B>Pays : </B><span itemprop="jobLocation">France</span><br/>  
 		
 		</dd>
 		</details><br/>
 	
     <dd>
-      <details>
+      <details itemprop="jobPosting" itemscope itemtype="http://schema.org/JobPosting">
      <summary> 
 				<B>[<time itemprop="startDate">2012-08-01</time> - 
 				<time itemprop="endDate">2013-02-01</time>]</B>
-				: <span itemprop="employmentType">Stage Developpeur BIGDATA</span></summary>
+				: <span itemprop="title">Stage Developpeur BIGDATA</span></summary>
         
          
-        <B>Poste : </B>Developpeur Java-BIG-DATA<br/>  
-        <B>Tache : </B>Developement Framework JAVA-BIGDATA<br/>  
-        <B>Entreprise : </B><a href="http://www.francelabs.com/">FRANCELABS</a>    <br/>    
-		<B>Pays : </B>France<br/> 
+        <B>Poste : </B><span itemprop="employmentType">Developpeur Java-BIG-DATA</span><br/>  
+        <B>Tache : </B><span itemprop="skills">Developement Framework JAVA-BIGDATA</span><br/>  
+        <B>Entreprise : </B><a href="http://www.francelabs.com/" itemprop="hiringOrganization">FRANCELABS</a>    <br/>    
+		<B>Pays : </B><span itemprop="jobLocation">France</span><br/> 
 
 		</dd>
 		</details><br/>
@@ -281,10 +283,10 @@
     <dl>
 		
 		<dd><B>Optionelles :</B>
-  <details>SOA
+  <details itemprop="Polytech" itemscope itemtype="http://schema.org/EducationalOrganization"><summary> <span itemprop="memberOf">SOA</span>
    </summary> 
 	<B>Enseignant : </B>
-	<a  href="http://www.i3s.unice.fr/~mosser/personal/start">Mosser</a>
+	<a  href="http://www.i3s.unice.fr/~mosser/personal/start" itemprop="WebPage"><span itemprop="owns">Mosser</span></a>
 	<br/>
 	<B>Collegues : </B>
     <span itemprop="colleague">Ayoub</span>, 
@@ -297,7 +299,7 @@
     <B>Project : </B>ProjectSOA
    <br/>
 	<B>Note : </B>
-	16
+	<span itemprop="bestRating">16</span>
 	<dd></dl>
   </details>
 	
@@ -306,9 +308,9 @@
 		
 		<br/>
   <B>Obligatoires :</B>
-   <details><summary>WebSemantic</summary>
+   <details itemprop="Polytech" itemscope itemtype="http://schema.org/EducationalOrganization"><summary> <span itemprop="memberOf">WebSemantic</span></summary>
 	 	 <B>Enseignant :  </B>
-    <a href="http://www.i3s.unice.fr/~faron/" >CATHERINE FARON ZUCKER</a><br/>
+    <a href="http://www.i3s.unice.fr/~faron/" itemprop="WebPage"><span itemprop="owns">CATHERINE FARON ZUCKER</span></a><br/>
 	 <B>Collegues : </B>
     <span itemprop="colleague">tounsi</span>,
     <span itemprop="colleague">Ayoub</span>,
@@ -317,7 +319,7 @@
     <B>Project :  </B>
 	ProjectCV<br/>
     <B> Note :  </B>
-	15
+	<span itemprop="bestRating">15</span>
 	</details>
 	</dd>
 	</dl>
