@@ -194,7 +194,7 @@
     <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#Michele"/>
     <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#obligatoryCourse"/>
     <teachedBy rdf:resource="http://www.polytech.fr/websemantic/cv#CATHERINE-FARON-ZUCKER"/>
-    <hasMark rdf:datatype="http://www.w3.org/2001/XMLSchema#Integer">15</hasMark>
+    <hasMark rdf:datatype="http://www.w3.org/2001/XMLSchema#Integer">19</hasMark>
     <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#Ayoub"/>
     <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#david"/>
     <hasProject rdf:resource="http://www.polytech.fr/websemantic/cv#ProjectCV"/>

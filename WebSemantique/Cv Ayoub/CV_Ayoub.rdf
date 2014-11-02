@@ -140,7 +140,7 @@
 	<rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#WebSemantic">
     <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#obligatoryCourse"/>
     <teachedBy rdf:resource="http://www.polytech.fr/websemantic/cv#CATHERINE-FARON-ZUCKER"/>
-    <hasMark rdf:datatype="http://www.w3.org/2001/XMLSchema#Integer">18</hasMark>
+    <hasMark rdf:datatype="http://www.w3.org/2001/XMLSchema#Integer">19</hasMark>
     <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#Ayoub"/>
     <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#Ahmed"/>
     <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#david"/>
