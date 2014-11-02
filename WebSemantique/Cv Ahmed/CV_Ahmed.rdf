@@ -2,317 +2,327 @@
 <rdf:RDF
    xmlns="http://www.polytech.fr/websemantic/cv#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xml:base  ="http://www.polytech.fr/websemantic/cv"
 >
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-ECURITY">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#task"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#FRANCELABS">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#trainingOrganization"/>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#company"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#MachineLearning">
-    <intrainingOrganization rdf:resource="http://www.polytech.fr/websemantic/cv#STANFORDUNIVERSITY"/>
-    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</hasDate>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#training"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#guillaume">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#student"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#TAHAHSIN">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#university"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-ABAP">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#task"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#FRANCAIS">
-    <haslevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BILLINGUE , C1 LEVEL</haslevel>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#languisticCompetence"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#ESPRIT">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#university"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#ProjectAL">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#StudyProject"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#MongoDB">
-    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</hasDate>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#training"/>
-    <intrainingOrganization rdf:resource="http://www.polytech.fr/websemantic/cv#MONGODBCO"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#MastereWEB">
-    <atUniversity rdf:resource="http://www.polytech.fr/websemantic/cv#POLYTECH-NICE-SOPHIA-ANTIPOLIS"/>
-    <studyLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAC+5</studyLevel>
-    <containsCourse rdf:resource="http://www.polytech.fr/websemantic/cv#SOA"/>
-    <startATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</startATDate>
-    <inField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB</inField>
-    <endATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2015</endATDate>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#diploma"/>
-    <containsCourse rdf:resource="http://www.polytech.fr/websemantic/cv#WebSemantic"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#SAP">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#company"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#Swimming">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#interest"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#ProjectSOA">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#StudyProject"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#CerificationCISCO2">
-    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2012</hasDate>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#certification"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#Mosser">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#teacher"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#tounsi">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#student"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#France">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#country"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#Music">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#interest"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#ESSTT">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#university"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#WEKA">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#trainingOrganization"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#POLYTECH-NICE-SOPHIA-ANTIPOLIS">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#university"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#ANGLAIS">
-    <haslevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FLUENT</haslevel>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#languisticCompetence"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#ApacheLucenneSolrTraining">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#training"/>
-    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2013</hasDate>
-    <intrainingOrganization rdf:resource="http://www.polytech.fr/websemantic/cv#FRANCELABS"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#StageDeveloppeurBIGDATA">
-    <startATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-08-01</startATDate>
-    <endATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-02-01</endATDate>
-    <inCompany rdf:resource="http://www.polytech.fr/websemantic/cv#FRANCELABS"/>
-    <taskDone rdf:resource="http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-BIGDATA"/>
-    <hasOccupiedPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developpeur Java-BIG-DATA</hasOccupiedPosition>
-    <inCountry rdf:resource="http://www.polytech.fr/websemantic/cv#France"/>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#internship"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-BIGDATA">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#task"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#Football">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#interest"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#BIGDATA">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#technicalCompetence"/>
-    <haslevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 month experience</haslevel>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#StageDeveloppeurJAVA">
-    <inCompany rdf:resource="http://www.polytech.fr/websemantic/cv#SAP"/>
-    <inCountry rdf:resource="http://www.polytech.fr/websemantic/cv#France"/>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#internship"/>
-    <hasOccupiedPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developpeur Java</hasOccupiedPosition>
-    <endATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-08-01</endATDate>
-    <startATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-03-01</startATDate>
-    <taskDone rdf:resource="http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-ABAP"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#Salvan">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#teacher"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#Michele">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#student"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#SEMANTICWEB">
-    <haslevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Learning</haslevel>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#technicalCompetence"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#MONGODBCO">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#trainingOrganization"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#MastereAL">
-    <containsCourse rdf:resource="http://www.polytech.fr/websemantic/cv#ArchitectureLogicielle"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#HADOOP">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#technicalCompetence"/>
-    <haslevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 Month experience</haslevel>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#SOA">
-    <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#david"/>
-    <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#Ayoub"/>
-    <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#guillaume"/>
-    <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#Ahmed"/>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#optionalCourse"/>
-    <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#Michele"/>
-    <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#cathline"/>
-    <hasProject rdf:resource="http://www.polytech.fr/websemantic/cv#ProjectSOA"/>
-    <hasMark rdf:datatype="http://www.w3.org/2001/XMLSchema#Integer">16</hasMark>
-    <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#francois"/>
-    <teachedBy rdf:resource="http://www.polytech.fr/websemantic/cv#Mosser"/>
-    <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#tounsi"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#CerificationCISCO1">
-    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2012</hasDate>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#certification"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#DeveloppeurFREELANCE">
-    <inCompany rdf:resource="http://www.polytech.fr/websemantic/cv#FRANCELABS"/>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#job"/>
-    <inCountry rdf:resource="http://www.polytech.fr/websemantic/cv#France"/>
-    <endATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-03-01</endATDate>
-    <hasOccupiedPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developpeur Java-information-Retrieval</hasOccupiedPosition>
-    <startATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-02-01</startATDate>
-    <taskDone rdf:resource="http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-information-Retrieval"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#INFORMATIONRETRIEVAL">
-    <haslevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Certified</haslevel>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#technicalCompetence"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#CerificationJAVAOCAO">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#certification"/>
-    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</hasDate>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#david">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#student"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#Licence">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#diploma"/>
-    <inField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ComputerScience</inField>
-    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</hasDate>
-    <studyLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Licence(BAC+3)</studyLevel>
-    <atUniversity rdf:resource="http://www.polytech.fr/websemantic/cv#ESSTT"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#CRYPTOLOG">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#company"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#WebSemantic">
-    <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#tounsi"/>
-    <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#Ahmed"/>
-    <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#Michele"/>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#obligatoryCourse"/>
-    <teachedBy rdf:resource="http://www.polytech.fr/websemantic/cv#CATHERINE-FARON-ZUCKER"/>
-    <hasMark rdf:datatype="http://www.w3.org/2001/XMLSchema#Integer">19</hasMark>
-    <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#Ayoub"/>
-    <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#david"/>
-    <hasProject rdf:resource="http://www.polytech.fr/websemantic/cv#ProjectCV"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#Ingenieur">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#diploma"/>
-    <inField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ComputerScience</inField>
-    <studyLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAC+5</studyLevel>
-    <atUniversity rdf:resource="http://www.polytech.fr/websemantic/cv#ESPRIT"/>
-    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2013</hasDate>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#Baccalaureat">
-    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2007</hasDate>
-    <studyLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAC</studyLevel>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#diploma"/>
-    <inField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Science Experimental</inField>
-    <atUniversity rdf:resource="http://www.polytech.fr/websemantic/cv#TAHAHSIN"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#Tunisie">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#country"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#ProjectCV">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#StudyProject"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#francois">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#student"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#DataMining">
-    <intrainingOrganization rdf:resource="http://www.polytech.fr/websemantic/cv#WEKA"/>
-    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</hasDate>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#training"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#ARABE">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#languisticCompetence"/>
-    <haslevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NATIVE</haslevel>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-information-Retrieval">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#task"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#Ahmed">
+
+<rdf:Description rdf:about="#Ahmed">
+    <rdf:type rdf:resource="#Person"/>
+    <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Missaoui</hasName>
+    <hasLastname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ahmed</hasLastname>
+    <hasAdress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Valbonne</hasAdress>
     <hasPhonenumber rdf:datatype="http://www.w3.org/2001/XMLSchema#Integer">00000</hasPhonenumber>
+    <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#Integer">26</hasAge>
+    <hasBirthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-11-25</hasBirthDate>
+    <hasEmail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ahmedEmail</hasEmail>
+    <hasmaritalStatus rdf:resource="#Single"/>
+    <haslicenceDriver rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</haslicenceDriver>
     <hascharateritic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bosseur</hascharateritic>
     <hascharateritic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autonome</hascharateritic>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#Person"/>
-    <hasAdress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Valbonne</hasAdress>
-    <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Missaoui</hasName>
-    <haslicenceDriver rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</haslicenceDriver>
-    <hasBirthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-11-25</hasBirthDate>
-    <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#Integer">26</hasAge>
-    <hasLastname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ahmed</hasLastname>
-    <hasCV rdf:resource="http://www.polytech.fr/websemantic/cv#CV_AHMED"/>
-    <hasEmail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ahmedEmail</hasEmail>
-    <hasmaritalStatus rdf:resource="http://www.polytech.fr/websemantic/cv#Single"/>
     <hascharateritic rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sérieux</hascharateritic>
+	<hasCV rdf:resource="#CV_AHMED"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#cathline">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#student"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#DeveloppeurJAVA">
-    <hasOccupiedPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developpeur Java-SECURITY</hasOccupiedPosition>
-    <inCompany rdf:resource="http://www.polytech.fr/websemantic/cv#CRYPTOLOG"/>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#job"/>
-    <taskDone rdf:resource="http://www.polytech.fr/websemantic/cv#DevellopementFrameworkJAVA-ECURITY"/>
-    <startATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-11-01</startATDate>
-    <endATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-08-01</endATDate>
-    <inCountry rdf:resource="http://www.polytech.fr/websemantic/cv#Tunisie"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#JAVA">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#technicalCompetence"/>
-    <haslevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Certified</haslevel>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#CV_AHMED">
-    <containsDiploma rdf:resource="http://www.polytech.fr/websemantic/cv#Licence"/>
-    <containsCompetence rdf:resource="http://www.polytech.fr/websemantic/cv#HADOOP"/>
-    <containstraining rdf:resource="http://www.polytech.fr/websemantic/cv#MachineLearning"/>
-    <containsCompetence rdf:resource="http://www.polytech.fr/websemantic/cv#BIGDATA"/>
-    <containsExperience rdf:resource="http://www.polytech.fr/websemantic/cv#DeveloppeurJAVA"/>
-    <containsDiploma rdf:resource="http://www.polytech.fr/websemantic/cv#Baccalaureat"/>
-    <containsExperience rdf:resource="http://www.polytech.fr/websemantic/cv#StageDeveloppeurJAVA"/>
-    <containscertification rdf:resource="http://www.polytech.fr/websemantic/cv#CerificationCISCO1"/>
-    <containsInterest rdf:resource="http://www.polytech.fr/websemantic/cv#Swimming"/>
-    <containsInterest rdf:resource="http://www.polytech.fr/websemantic/cv#Music"/>
-    <containsExperience rdf:resource="http://www.polytech.fr/websemantic/cv#StageDeveloppeurBIGDATA"/>
-    <containscertification rdf:resource="http://www.polytech.fr/websemantic/cv#CerificationCISCO2"/>
-    <containstraining rdf:resource="http://www.polytech.fr/websemantic/cv#ApacheLucenneSolrTraining"/>
-    <containsInterest rdf:resource="http://www.polytech.fr/websemantic/cv#Football"/>
-    <containsCompetence rdf:resource="http://www.polytech.fr/websemantic/cv#ANGLAIS"/>
-    <containsCompetence rdf:resource="http://www.polytech.fr/websemantic/cv#JAVA"/>
-    <containsCompetence rdf:resource="http://www.polytech.fr/websemantic/cv#INFORMATIONRETRIEVAL"/>
-    <containsCompetence rdf:resource="http://www.polytech.fr/websemantic/cv#FRANCAIS"/>
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#CV"/>
-    <containscertification rdf:resource="http://www.polytech.fr/websemantic/cv#CerificationJAVAOCAO"/>
-    <containstraining rdf:resource="http://www.polytech.fr/websemantic/cv#DataMining"/>
+<rdf:Description rdf:about="#CV_AHMED">
+    <containscertification rdf:resource="#CerificationCISCO2"/>
+    <containsCompetence rdf:resource="#JAVA"/>
+    <containsCompetence rdf:resource="#ANGLAIS"/>
+    <containscertification rdf:resource="#CerificationCISCO1"/>
+    <containscertification rdf:resource="#CerificationJAVAOCAO"/>
+    <containstraining rdf:resource="#MongoDB"/>
+    <containsExperience rdf:resource="#DeveloppeurJAVA"/>
+    <containsDiploma rdf:resource="#Baccalaureat"/>
+    <containsInterest rdf:resource="#Swimming"/>
+    <containsExperience rdf:resource="#StageDeveloppeurJAVA"/>
     <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recherche Un stage PFE</hasSummary>
-    <containstraining rdf:resource="http://www.polytech.fr/websemantic/cv#MongoDB"/>
-    <containsDiploma rdf:resource="http://www.polytech.fr/websemantic/cv#Ingenieur"/>
-    <containsDiploma rdf:resource="http://www.polytech.fr/websemantic/cv#MastereWEB"/>
-    <containsCompetence rdf:resource="http://www.polytech.fr/websemantic/cv#ARABE"/>
-    <containsExperience rdf:resource="http://www.polytech.fr/websemantic/cv#DeveloppeurFREELANCE"/>
-    <containsCompetence rdf:resource="http://www.polytech.fr/websemantic/cv#SEMANTICWEB"/>
+    <containsExperience rdf:resource="#DeveloppeurFREELANCE"/>
     <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingenieur JAVA-JEE/BIG-DATA</hasTitle>
+    <containsCompetence rdf:resource="#HADOOP"/>
+    <containsInterest rdf:resource="#Football"/>
+    <containsDiploma rdf:resource="#MastereWEB"/>
+    <containsDiploma rdf:resource="#Ingenieur"/>
+    <containsInterest rdf:resource="#Music"/>
+    <containsCompetence rdf:resource="#SEMANTICWEB"/>
+    <containsCompetence rdf:resource="#BIGDATA"/>
+    <containstraining rdf:resource="#ApacheLucenneSolrTraining"/>
+    <containsCompetence rdf:resource="#FRANCAIS"/>
+    <containstraining rdf:resource="#DataMining"/>
+    <rdf:type rdf:resource="#CV"/>
+    <containsExperience rdf:resource="#StageDeveloppeurBIGDATA"/>
+    <containsDiploma rdf:resource="#Licence"/>
+    <containsCompetence rdf:resource="#INFORMATIONRETRIEVAL"/>
+    <containstraining rdf:resource="#MachineLearning"/>
+    <containsCompetence rdf:resource="#ARABE"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#CATHERINE-FARON-ZUCKER">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#teacher"/>
+  
+<rdf:Description rdf:about="#Licence">
+    <studyLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Licence(BAC+3)</studyLevel>
+    <inField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ComputerScience</inField>
+    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</hasDate>
+    <atUniversity rdf:resource="#ESSTT"/>
+    <rdf:type rdf:resource="#diploma"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#Ayoub">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#student"/>
+<rdf:Description rdf:about="#MastereWEB">
+    <endATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2015</endATDate>
+    <studyLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAC+5</studyLevel>
+    <rdf:type rdf:resource="#diploma"/>
+    <startATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</startATDate>
+    <containsCourse rdf:resource="#WebSemantic"/>
+    <containsCourse rdf:resource="#SOA"/>
+    <atUniversity rdf:resource="#POLYTECH-NICE-SOPHIA-ANTIPOLIS"/>
+    <inField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB</inField>
+  </rdf:Description>  
+<rdf:Description rdf:about="#Ingenieur">
+    <rdf:type rdf:resource="#diploma"/>
+    <studyLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAC+5</studyLevel>
+    <inField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ComputerScience</inField>
+    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2013</hasDate>
+    <atUniversity rdf:resource="#ESPRIT"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#ArchitectureLogicielle">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#obligatoryCourse"/>
-    <hasProject rdf:resource="http://www.polytech.fr/websemantic/cv#ProjectAL"/>
-    <teachedBy rdf:resource="http://www.polytech.fr/websemantic/cv#Salvan"/>
-    <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#guillaume"/>
-    <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#cathline"/>
-    <followedBy rdf:resource="http://www.polytech.fr/websemantic/cv#francois"/>
+<rdf:Description rdf:about="#Baccalaureat">
+    <inField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Science Experimental</inField>
+    <atUniversity rdf:resource="#TAHAHSIN"/>
+    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2007</hasDate>
+    <rdf:type rdf:resource="#diploma"/>
+    <studyLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAC</studyLevel>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.polytech.fr/websemantic/cv#STANFORDUNIVERSITY">
-    <rdf:type rdf:resource="http://www.polytech.fr/websemantic/cv#trainingOrganization"/>
+ 
+<rdf:Description rdf:about="#DeveloppeurJAVA">
+    <inCountry rdf:resource="#Tunisie"/>
+    <inCompany rdf:resource="#CRYPTOLOG"/>
+    <hasOccupiedPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developpeur Java-SECURITY</hasOccupiedPosition>
+    <rdf:type rdf:resource="#job"/>
+    <startATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-11-01</startATDate>
+    <taskDone rdf:resource="#DevellopementFrameworkJAVA-ECURITY"/>
+    <endATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-08-01</endATDate>
   </rdf:Description>
+<rdf:Description rdf:about="#DeveloppeurFREELANCE">
+    <inCompany rdf:resource="#FRANCELABS"/>
+    <hasOccupiedPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developpeur Java-information-Retrieval</hasOccupiedPosition>
+    <inCountry rdf:resource="#France"/>
+    <startATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-02-01</startATDate>
+    <taskDone rdf:resource="#DevellopementFrameworkJAVA-information-Retrieval"/>
+    <endATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-03-01</endATDate>
+    <rdf:type rdf:resource="#job"/>
+  </rdf:Description>
+<rdf:Description rdf:about="#StageDeveloppeurJAVA">
+    <inCompany rdf:resource="#SAP"/>
+    <rdf:type rdf:resource="#internship"/>
+    <endATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-08-01</endATDate>
+    <hasOccupiedPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developpeur Java</hasOccupiedPosition>
+    <startATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-03-01</startATDate>
+    <taskDone rdf:resource="#DevellopementFrameworkJAVA-ABAP"/>
+    <inCountry rdf:resource="#France"/>
+  </rdf:Description>
+<rdf:Description rdf:about="#StageDeveloppeurBIGDATA">
+    <taskDone rdf:resource="#DevellopementFrameworkJAVA-BIGDATA"/>
+    <rdf:type rdf:resource="#internship"/>
+    <endATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-02-01</endATDate>
+    <inCountry rdf:resource="#France"/>
+    <inCompany rdf:resource="#FRANCELABS"/>
+    <startATDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-08-01</startATDate>
+    <hasOccupiedPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developpeur Java-BIG-DATA</hasOccupiedPosition>
+  </rdf:Description>
+ 
+ <rdf:Description rdf:about="#CerificationJAVAOCAO">
+    <rdf:type rdf:resource="#certification"/>
+    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</hasDate>
+  </rdf:Description>
+<rdf:Description rdf:about="#CerificationCISCO2">
+    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2012</hasDate>
+    <rdf:type rdf:resource="#certification"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CerificationCISCO1">
+    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2012</hasDate>
+    <rdf:type rdf:resource="#certification"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="#MongoDB">
+    <rdf:type rdf:resource="#training"/>
+    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</hasDate>
+    <intrainingOrganization rdf:resource="#MONGODBCO"/>
+  </rdf:Description>
+<rdf:Description rdf:about="#MachineLearning">
+    <rdf:type rdf:resource="#training"/>
+    <intrainingOrganization rdf:resource="#STANFORDUNIVERSITY"/>
+    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</hasDate>
+  </rdf:Description>
+<rdf:Description rdf:about="#ApacheLucenneSolrTraining">
+    <rdf:type rdf:resource="#training"/>
+    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2013</hasDate>
+    <intrainingOrganization rdf:resource="#FRANCELABS"/>
+  </rdf:Description>
+ <rdf:Description rdf:about="#DataMining">
+    <rdf:type rdf:resource="#training"/>
+    <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</hasDate>
+    <intrainingOrganization rdf:resource="#WEKA"/>
+  </rdf:Description>
+<rdf:Description rdf:about="#BIGDATA">
+    <rdf:type rdf:resource="#technicalCompetence"/>
+    <haslevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 month experience</haslevel>
+  </rdf:Description>
+<rdf:Description rdf:about="#ARABE">
+    <rdf:type rdf:resource="#languisticCompetence"/>
+    <haslevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NATIVE</haslevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FRANCAIS">
+    <haslevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BILLINGUE , C1 LEVEL</haslevel>
+    <rdf:type rdf:resource="#languisticCompetence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ANGLAIS">
+    <rdf:type rdf:resource="#languisticCompetence"/>
+    <haslevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FLUENT</haslevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#INFORMATIONRETRIEVAL">
+    <haslevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Certified</haslevel>
+    <rdf:type rdf:resource="#technicalCompetence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#JAVA">
+    <haslevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Certified</haslevel>
+    <rdf:type rdf:resource="#technicalCompetence"/>
+  </rdf:Description>
+ <rdf:Description rdf:about="#HADOOP">
+    <haslevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 Month experience</haslevel>
+    <rdf:type rdf:resource="#technicalCompetence"/>
+  </rdf:Description>
+<rdf:Description rdf:about="#SEMANTICWEB">
+    <haslevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Learning</haslevel>
+    <rdf:type rdf:resource="#technicalCompetence"/>
+  </rdf:Description> 
+  
+  <rdf:Description rdf:about="#ArchitectureLogicielle">
+    <followedBy rdf:resource="#guillaume"/>
+    <rdf:type rdf:resource="#obligatoryCourse"/>
+    <followedBy rdf:resource="#francois"/>
+    <teachedBy rdf:resource="#Salvan"/>
+    <followedBy rdf:resource="#cathline"/>
+    <hasProject rdf:resource="#ProjectAL"/>
+  </rdf:Description>
+   <rdf:Description rdf:about="#SOA">
+    <followedBy rdf:resource="#cathline"/>
+    <followedBy rdf:resource="#david"/>
+    <teachedBy rdf:resource="#Mosser"/>
+    <followedBy rdf:resource="#Michele"/>
+    <followedBy rdf:resource="#francois"/>
+    <rdf:type rdf:resource="#optionalCourse"/>
+    <followedBy rdf:resource="#guillaume"/>
+    <followedBy rdf:resource="#Ayoub"/>
+    <followedBy rdf:resource="#tounsi"/>
+    <hasProject rdf:resource="#ProjectSOA"/>
+    <followedBy rdf:resource="#Ahmed"/>
+    <hasMark rdf:datatype="http://www.w3.org/2001/XMLSchema#Integer">16</hasMark>
+  </rdf:Description>
+
+<rdf:Description rdf:about="#WebSemantic">
+    <followedBy rdf:resource="#david"/>
+    <hasProject rdf:resource="#ProjectCV"/>
+    <followedBy rdf:resource="#Michele"/>
+    <rdf:type rdf:resource="#obligatoryCourse"/>
+    <hasMark rdf:datatype="http://www.w3.org/2001/XMLSchema#Integer">15</hasMark>
+    <followedBy rdf:resource="#Ayoub"/>
+    <followedBy rdf:resource="#tounsi"/>
+    <followedBy rdf:resource="#Ahmed"/>
+    <teachedBy rdf:resource="#CATHERINE-FARON-ZUCKER"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="#DevellopementFrameworkJAVA-ECURITY">
+    <rdf:type rdf:resource="#task"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Tunisie">
+    <rdf:type rdf:resource="#country"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#francois">
+    <rdf:type rdf:resource="#student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CATHERINE-FARON-ZUCKER">
+    <rdf:type rdf:resource="#teacher"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ProjectCV">
+    <rdf:type rdf:resource="#StudyProject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#cathline">
+    <rdf:type rdf:resource="#student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Music">
+    <rdf:type rdf:resource="#interest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#DevellopementFrameworkJAVA-ABAP">
+    <rdf:type rdf:resource="#task"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#david">
+    <rdf:type rdf:resource="#student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Ayoub">
+    <rdf:type rdf:resource="#student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ProjectAL">
+    <rdf:type rdf:resource="#StudyProject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MastereAL">
+    <containsCourse rdf:resource="#ArchitectureLogicielle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Salvan">
+    <rdf:type rdf:resource="#teacher"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#guillaume">
+    <rdf:type rdf:resource="#student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#tounsi">
+    <rdf:type rdf:resource="#student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ESPRIT">
+    <rdf:type rdf:resource="#university"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Swimming">
+    <rdf:type rdf:resource="#interest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CRYPTOLOG">
+    <rdf:type rdf:resource="#company"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#France">
+    <rdf:type rdf:resource="#country"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#POLYTECH-NICE-SOPHIA-ANTIPOLIS">
+    <rdf:type rdf:resource="#university"/>
+  </rdf:Description> 
+  <rdf:Description rdf:about="#Mosser">
+    <rdf:type rdf:resource="#teacher"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ProjectSOA">
+    <rdf:type rdf:resource="#StudyProject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Michele">
+    <rdf:type rdf:resource="#student"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#DevellopementFrameworkJAVA-information-Retrieval">
+    <rdf:type rdf:resource="#task"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WEKA">
+    <rdf:type rdf:resource="#trainingOrganization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ESSTT">
+    <rdf:type rdf:resource="#university"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TAHAHSIN">
+    <rdf:type rdf:resource="#university"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#DevellopementFrameworkJAVA-BIGDATA">
+    <rdf:type rdf:resource="#task"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Football">
+    <rdf:type rdf:resource="#interest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MONGODBCO">
+    <rdf:type rdf:resource="#trainingOrganization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#STANFORDUNIVERSITY">
+    <rdf:type rdf:resource="#trainingOrganization"/>
+  </rdf:Description>
+ <rdf:Description rdf:about="#SAP">
+    <rdf:type rdf:resource="#company"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FRANCELABS">
+    <rdf:type rdf:resource="#trainingOrganization"/>
+    <rdf:type rdf:resource="#company"/>
+  </rdf:Description>
+  
 </rdf:RDF>
 

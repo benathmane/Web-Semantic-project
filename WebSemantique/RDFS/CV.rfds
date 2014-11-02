@@ -99,6 +99,8 @@
 	<rdfs:range rdf:resource='#CV'/>
 	<rdfs:label xml:lang='fr'>a un CV</rdfs:label>
 	<rdfs:label xml:lang='en'>has CV</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the person has a cv</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que la personne possède un CV</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='hasName'>
@@ -107,6 +109,8 @@
 	<rdfs:range rdf:resource='rdfs:Literal'/>
 	<rdfs:label xml:lang='fr'>a un nom </rdfs:label>
 	<rdfs:label xml:lang='en'>has name </rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the person has a name</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que la personne possède un nom</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='hasLastname'>
@@ -115,13 +119,17 @@
 	<rdfs:range rdf:resource='rdfs:Literal'/>
 	<rdfs:label xml:lang='fr'>a un prénom </rdfs:label>
 	<rdfs:label xml:lang='en'>has lastName </rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the person has a lastname</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que la personne possède un prénom</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='hasBirthDate'>
 	<rdfs:domain rdf:resource='#Person'/>
 	<rdfs:range rdf:resource='rdfs:Literal'/>
-	<rdfs:label xml:lang='fr'>a un date de naissance</rdfs:label>
+	<rdfs:label xml:lang='fr'>a une date de naissance</rdfs:label>
 	<rdfs:label xml:lang='en'>has birthDate </rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the person has a birthday</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que la personne possède une date de naissance</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='hasAdress'>
@@ -129,77 +137,102 @@
 	<rdfs:range rdf:resource='rdfs:Literal'/>
 	<rdfs:label xml:lang='fr'>a une adresse </rdfs:label>
 	<rdfs:label xml:lang='en'>has adress </rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the person has an adress</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que la personne possède une adresse</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='hasEmail'>
 	<rdfs:domain rdf:resource='#Person'/>
 	<rdfs:range rdf:resource='rdfs:Literal'/>
-	<rdfs:label xml:lang='fr'>a email </rdfs:label>
+	<rdfs:label xml:lang='fr'>a un email </rdfs:label>
 	<rdfs:label xml:lang='en'>has email </rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the person has an email</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que la personne possède un email</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='hasPhonenumber'>
 	<rdfs:domain rdf:resource='#Person'/>
 	<rdfs:range rdf:resource='rdfs:Literal'/>
-	<rdfs:label xml:lang='fr'>a numero de telephone</rdfs:label>
+	<rdfs:label xml:lang='fr'>a un numéro de téléphone</rdfs:label>
 	<rdfs:label xml:lang='en'>has phonenumber </rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the person has a phone number</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que la personne possède un numéro de téléphone</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='hasAge'>
 	<rdfs:domain rdf:resource='#Person'/>
 	<rdfs:range rdf:resource='rdfs:Literal'/>
-	<rdfs:label xml:lang='fr'>a age </rdfs:label>
+	<rdfs:label xml:lang='fr'>agé de </rdfs:label>
 	<rdfs:label xml:lang='en'>has age </rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the person has an age</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que la personne est agé de</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='hasmaritalStatus'>
 	<rdfs:domain rdf:resource='#Person'/>
 	<rdfs:range rdf:resource="#MaritalStatus"/>
 	<rdfs:label xml:lang="en">familyStatus</rdfs:label>
+	<rdfs:label xml:lang="fr">situation familiale</rdfs:label>
 	<rdfs:comment xml:lang="en">Indicates person's marital status.</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique la situation familiale de la personne</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='haslicenceDriver'>
 	<rdfs:domain rdf:resource='#Person'/>
 	<rdfs:range rdf:resource='rdfs:Literal'/>
+	<rdfs:label xml:lang="fr">possed un permis de conduire</rdfs:label>
 	<rdfs:label xml:lang="en">hasDriversLicense</rdfs:label>
 	<rdfs:comment xml:lang="en">Indicates if the person has drivers license (for regular cars).</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique si la personne possède un permis de conduire</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='hasDate'>
 	<rdfs:range rdf:resource='rdfs:Literal'/>
-	<rdfs:label xml:lang='fr'> a date </rdfs:label>
+	<rdfs:label xml:lang='fr'> a la date </rdfs:label>
 	<rdfs:label xml:lang='en'>has date </rdfs:label>
+	<rdfs:comment xml:lang="fr">Indique	que la ressouce domaine a été realisée à cette date</rdfs:comment>
+	<rdfs:comment xml:lang="en">Indicates that the domain resource has been done at this date </rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='startATDate'>
 	<rdfs:range rdf:resource='rdfs:Literal'/>
 	<rdfs:label xml:lang='fr'> commence le </rdfs:label>
 	<rdfs:label xml:lang='en'>Start at Date </rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the domain resouce has stated at this date </rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que la ressource domaine a commencée à partir de cette date</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='endATDate'>
 	<rdfs:range rdf:resource='rdfs:Literal'/>
 	<rdfs:label xml:lang='fr'> Fini le  </rdfs:label>
 	<rdfs:label xml:lang='en'>end at date </rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the domain resouce has ended at this date </rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que la ressource domaine a fini à cette date</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='contains'>
 	<rdfs:domain rdf:resource='#CV'/>
+	<rdfs:comment xml:lang="en">Indicates that the CV contains something : it's a parent property that will be inhereted </rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que le cv contient quelque chose : c'est une propriété qui sera héritée</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='containsDiploma'>
 	<rdfs:subPropertyOf rdf:resource='#contains'/>	
 	<rdfs:range rdf:resource='#diploma'/>
 	<rdfs:label xml:lang="en">contains Diploma</rdfs:label>
-	<rdfs:label xml:lang="fr">contient Diplome</rdfs:label>
+	<rdfs:label xml:lang="fr">contient diplôme</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the CV contains diploma</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que le cv contient un diplôme</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='containsExperience'>
 	<rdfs:subPropertyOf rdf:resource='#contains'/>	
 	<rdfs:range rdf:resource='#professionalExperience'/>
 	<rdfs:label xml:lang="en">contains professional experience</rdfs:label>
-	<rdfs:label xml:lang="fr">contient experience professionelle</rdfs:label>
+	<rdfs:label xml:lang="fr">contient expérience professionnelle</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the CV contains experience</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que le Cv contient une expérience</rdfs:comment>
+
 </rdf:Property>
 
 <rdf:Property rdf:ID='containstraining'>
@@ -207,27 +240,36 @@
 	<rdfs:range rdf:resource='#training'/>
 	<rdfs:label xml:lang="en">contains training</rdfs:label>
 	<rdfs:label xml:lang="fr">contient formation</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the CV contains training</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que le cv contient une formation</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='containsInterest'>
 	<rdfs:subPropertyOf rdf:resource='#contains'/>	
 	<rdfs:range rdf:resource='#interest'/>
 	<rdfs:label xml:lang="en">contains interest</rdfs:label>
-	<rdfs:label xml:lang="fr">contient centre interet</rdfs:label>
+	<rdfs:label xml:lang="fr">contient un centre d'intérêt</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the CV contains interest</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que le cv contient un centre d'intérêt</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='containsCompetence'>
 	<rdfs:subPropertyOf rdf:resource='#contains'/>	
 	<rdfs:range rdf:resource='#competence'/>
 	<rdfs:label xml:lang="en">contains competence</rdfs:label>
-	<rdfs:label xml:lang="fr">contient competence</rdfs:label>
+	<rdfs:label xml:lang="fr">contient compétence</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the CV contains competence</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que le cv contient une compétence</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='containsReference'>
 	<rdfs:subPropertyOf rdf:resource='#contains'/>	
 	<rdfs:range rdf:resource='#reference'/>
 	<rdfs:label xml:lang="en">contains reference</rdfs:label>
-	<rdfs:label xml:lang="fr">contient reference</rdfs:label>
+	<rdfs:label xml:lang="fr">contient référence</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the CV contains refrence</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que le cv contient une référence</rdfs:comment>
+
 </rdf:Property>
 
 <rdf:Property rdf:ID='containscertification'>
@@ -235,6 +277,8 @@
 	<rdfs:range rdf:resource='#certificate'/>
 	<rdfs:label xml:lang="en">contains certification</rdfs:label>
 	<rdfs:label xml:lang="fr">contient certification</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the CV contains certification</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que le cv contient une certification</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='atUniversity'>
@@ -242,18 +286,24 @@
 	<rdfs:range rdf:resource='#university'/>
 	<rdfs:label xml:lang="en">At university</rdfs:label>
 	<rdfs:label xml:lang="fr">à l'université</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that diploma is studied at the university</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique le diplôme a été pris à cette université</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='hasLabel'>
 	<rdfs:range rdf:resource='rdfs:Literal'/>
 	<rdfs:label xml:lang="en">has label</rdfs:label>
 	<rdfs:label xml:lang="fr">a pour label</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that resource has a label</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que la ressource a un label</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='inCountry'>
 	<rdfs:range rdf:resource='#country'/>
 	<rdfs:label xml:lang="en">in country</rdfs:label>
-	<rdfs:label xml:lang="fr">dans le pays </rdfs:label>
+	<rdfs:label xml:lang="fr"> à ce pays </rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that resource is in the country</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique la ressource est à ce pays</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='inField'>
@@ -263,6 +313,8 @@
 	<rdfs:range rdf:resource='#field'/>
 	<rdfs:label xml:lang="en">in field</rdfs:label>
 	<rdfs:label xml:lang="fr">dans le domaine </rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that (diploma,training,professional Experience) is this field</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique le diplôme, formation ou expérience professionelle est dans ce domaine d'étude</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='intrainingOrganization'>
@@ -270,6 +322,8 @@
 	<rdfs:range rdf:resource='#trainingOrganization'/>
 	<rdfs:label xml:lang="en">in training Organization</rdfs:label>
 	<rdfs:label xml:lang="fr">dans l'organisation de formation </rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that trainig has been done in the training organization</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique la formation a été réalisé à ce centre de formation</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='haslevel'>
@@ -277,13 +331,17 @@
 	<rdfs:range rdf:resource='rdfs:Literal'/>
 	<rdfs:label xml:lang="en">has Level</rdfs:label>
 	<rdfs:label xml:lang="fr">a pour niveau</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that tha person having this comptence has a level</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique la personne ayant cette compétence à un niveau</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='studyLevel'>
 	<rdfs:domain rdf:resource='#diploma'/>
 	<rdfs:range rdf:resource='rdfs:Literal'/>
 	<rdfs:label xml:lang="en">at studyLevel</rdfs:label>
-	<rdfs:label xml:lang="fr">dans niveau d'etude </rdfs:label>
+	<rdfs:label xml:lang="fr">dans niveau d'étude </rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that diploma is at this study level</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique le diplôme est de ce niveau d'étude (BAC 3, BAC 5...</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='inCompany'>
@@ -291,13 +349,17 @@
 	<rdfs:range rdf:resource='#company'/>
 	<rdfs:label xml:lang="en">in the company</rdfs:label>
 	<rdfs:label xml:lang="fr">au sein de l'entreprise </rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that professional experience has been done in a company</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique l'expérience professionnelle a été réaliser à cette entreprise</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='inResearchLaboratory'>
 	<rdfs:domain rdf:resource='#professionalExperience'/>
 	<rdfs:range rdf:resource='#researchLaboratory'/>
 	<rdfs:label xml:lang="en">in the research Laboratory</rdfs:label>
-	<rdfs:label xml:lang="fr">au sein de laboratoire de recherche</rdfs:label>
+	<rdfs:label xml:lang="fr">au sein du laboratoire de recherche</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that professional experience has been done in a reserach laboratory</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique l'expérience professionnelle a été réaliser à ce laboratoire de recherche</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='hasOccupiedPosition'>
@@ -305,20 +367,26 @@
 	<rdfs:range rdf:resource='#occupiedPosition'/>
 	<rdfs:label xml:lang="en">has occupied Position</rdfs:label>
 	<rdfs:label xml:lang="fr">a pour poste</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that professional experience has been done in a company</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que l'expérience professionnelle a été réaliser à cette entreprise</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='taskDone'>
 	<rdfs:domain rdf:resource='#professionalExperience'/>
 	<rdfs:range rdf:resource='#task'/>
 	<rdfs:label xml:lang="en">task done</rdfs:label>
-	<rdfs:label xml:lang="fr">tache réalisé</rdfs:label>
+	<rdfs:label xml:lang="fr">tâche réalisé</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates the task realised during the professional experience</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique la tâche réalisée au cours de l'expérience professionnelle </rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='containsCourse'>
 	<rdfs:domain rdf:resource='#diploma'/>
 	<rdfs:range rdf:resource='#course'/>
-	<rdfs:label xml:lang="en">contains cours</rdfs:label>
-	<rdfs:label xml:lang="fr">contient le cour </rdfs:label>
+	<rdfs:label xml:lang="en">contains course</rdfs:label>
+	<rdfs:label xml:lang="fr">contient le cours </rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the diploma contains this course</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que le diplôme possède un cours </rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='teachedBy'>
@@ -326,6 +394,8 @@
 	<rdfs:range rdf:resource='#teacher'/>
 	<rdfs:label xml:lang="en">teached by </rdfs:label>
 	<rdfs:label xml:lang="fr">enseigné par</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the course is teached by a teacher</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que le cours est enseigné par une enseignante </rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='followedBy'>
@@ -333,13 +403,17 @@
 	<rdfs:range rdf:resource='#student'/>
 	<rdfs:label xml:lang="en">followed by </rdfs:label>
 	<rdfs:label xml:lang="fr">est suivi par</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the course is attended by student</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que le cours est suivi par un étudiant </rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='hasTitle'>
 	<rdfs:domain rdf:resource='#CV'/>
 	<rdfs:range rdf:resource='rdfs:Literal'/>
 	<rdfs:label xml:lang="en">Title </rdfs:label>
-	<rdfs:label xml:lang="fr">titre du CV</rdfs:label>
+	<rdfs:label xml:lang="fr">a un titre</rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the Cv has a title</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que le cv a un titre</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='hasProject'>
@@ -347,6 +421,8 @@
 	<rdfs:range rdf:resource='#StudyProject'/>
 	<rdfs:label xml:lang="en">has project </rdfs:label>
 	<rdfs:label xml:lang="fr">a un projet </rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the course has project</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que le cours contient un projet</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='hasMark'>
@@ -354,13 +430,17 @@
 	<rdfs:range rdf:resource='#courseMark'/>
 	<rdfs:label xml:lang="en">has mark </rdfs:label>
 	<rdfs:label xml:lang="fr">a une note </rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates the course has a mark</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que le cours possède une note</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='hascharateritic'>
 	<rdfs:domain rdf:resource='#Person'/>
 	<rdfs:range rdf:resource='rdfs:Literal'/>
 	<rdfs:label xml:lang="en">has charateritic </rdfs:label>
-	<rdfs:label xml:lang="fr">a un characteristique </rdfs:label>
+	<rdfs:label xml:lang="fr">a une caractéristique </rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that person has carateristic</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que la personne possède une caractéristique</rdfs:comment>
 </rdf:Property>
 
 <rdf:Property rdf:ID='hasSummary'>
@@ -368,6 +448,8 @@
 	<rdfs:range rdf:resource='rdfs:Literal'/>
 	<rdfs:label xml:lang="en">has summary </rdfs:label>
 	<rdfs:label xml:lang="fr">a un résumé </rdfs:label>
+	<rdfs:comment xml:lang="en">Indicates that the Cv has a summary</rdfs:comment>
+	<rdfs:comment xml:lang="fr">Indique que le cv a un résumé</rdfs:comment>
 </rdf:Property>
 
 </rdf:RDF>
