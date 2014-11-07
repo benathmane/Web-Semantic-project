@@ -1,4 +1,5 @@
-Same Project. un en owl et un en xml.
+A modifier car j'ai modifier les relation qui ont comme range une literal,
+elles doivent etre des data properties.
+Il faut modifier re-verifier les individus car certians informations ont ete supprimés.
 
-RQ: Il manque Ton CV dans ce projet , il suffit d'ajouter des individus , les instance de ton cV.
-Et le rapport decivant les Schema.
+Pour le rapport , j'ai commencer a l'ecrire , on devrai l'ameliorer mais ca sera pour demain.
