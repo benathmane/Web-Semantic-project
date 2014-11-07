@@ -1,0 +1,2209 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.polytech.fr/websemantic/cv"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.polytech.fr/websemantic/cv">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#MaritalStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#CV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#StudyProject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#certification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#company"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#competence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#courseMark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#diploma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#field"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#interest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#internship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#job"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#languisticCompetence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#obligatoryCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#occupiedPosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#optionalCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#professionalExperience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#reference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#researchLaboratory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#task"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#teacher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#technicalCompetence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#training"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#trainingOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="v#university"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#atUniversity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsCompetence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsCourse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsDiploma"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsExperience"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsInterest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsReference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containscertification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containstraining"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#followedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCV"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOccupiedPosition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasmaritalStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inCompany"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inResearchLaboratory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#intrainingOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#studyLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#taskDone"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#teachedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#endATDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAdress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBirthDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEmail"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLabel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLastname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMark"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOccupiedPosition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPhonenumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSummary"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hascharateritic"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haslevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haslicenceDriver"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#inField"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#startATDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#studyLevel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ANGLAIS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ARABE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Accueil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AdministrationReseau"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AgentAccueil-Stadardiste"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ahmed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ApacheLucenneSolrTraining"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ArchitectureLogicielle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ayoub"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BIGDATA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Baccalaureat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BaccalaureatA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CATHERINE-FARON-ZUCKER"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CCIDesVosges"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CIV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CRYPTOLOG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV_AHMED"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CerificationCISCO1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CerificationCISCO2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CerificationJAVAOCAO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DUT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DataMining"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DevellopementFrameworkJAVA-ABAP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DevellopementFrameworkJAVA-BIGDATA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DevellopementFrameworkJAVA-ECURITY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DevellopementFrameworkJAVA-information-Retrieval"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DevelopementSymfony2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DeveloppementApplicationDesktopASP.NET"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DeveloppeurFREELANCE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DeveloppeurJAVA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ESPRIT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ESSTT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EST"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FRANCAIS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FRANCELABS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Football"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HADOOP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IBNOUMANDOUR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#INFORMATIONRETRIEVAL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IUTNANCY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ingenieur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JAVA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Licence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LicencePro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MONGODBCO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MachineLearning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maroc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MastereAL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MastereWEB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Michele"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MongoDB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mosser"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Music"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nouvelles_Technologies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ONE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PHP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#POLYTECH-NICE-SOPHIA-ANTIPOLIS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProjectAL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProjectCV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProjectSOA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SAP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SEMANTICWEB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SOA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#STANFORDUNIVERSITY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Salvan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StageAdministrateurReseau"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StageDeveloppeurASP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StageDeveloppeurBIGDATA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StageDeveloppeurJAVA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StageDeveloppeurWEB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SurveillanceNuit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Surveillant-nuit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Swimming"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TAHAHSIN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tunisie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WEKA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WebSemantic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cathline"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#david"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#francois"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#guillaume"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tounsi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#.NET"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="v#internship"/>
+        <Class IRI="v#professionalExperience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="v#job"/>
+        <Class IRI="v#professionalExperience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="v#languisticCompetence"/>
+        <Class IRI="v#competence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="v#obligatoryCourse"/>
+        <Class IRI="v#course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="v#optionalCourse"/>
+        <Class IRI="v#course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="v#reference"/>
+        <Class IRI="v#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="v#student"/>
+        <Class IRI="v#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="v#teacher"/>
+        <Class IRI="v#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="v#technicalCompetence"/>
+        <Class IRI="v#competence"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="v#languisticCompetence"/>
+        <NamedIndividual IRI="#ANGLAIS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#languisticCompetence"/>
+        <NamedIndividual IRI="#ARABE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#task"/>
+        <NamedIndividual IRI="#Accueil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#task"/>
+        <NamedIndividual IRI="#AdministrationReseau"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#job"/>
+        <NamedIndividual IRI="#AgentAccueil-Stadardiste"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#Person"/>
+        <NamedIndividual IRI="#Ahmed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#training"/>
+        <NamedIndividual IRI="#ApacheLucenneSolrTraining"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#obligatoryCourse"/>
+        <NamedIndividual IRI="#ArchitectureLogicielle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#student"/>
+        <NamedIndividual IRI="#Ayoub"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#technicalCompetence"/>
+        <NamedIndividual IRI="#BIGDATA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#diploma"/>
+        <NamedIndividual IRI="#Baccalaureat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#diploma"/>
+        <NamedIndividual IRI="#BaccalaureatA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#teacher"/>
+        <NamedIndividual IRI="#CATHERINE-FARON-ZUCKER"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#company"/>
+        <NamedIndividual IRI="#CCIDesVosges"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#company"/>
+        <NamedIndividual IRI="#CIV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#company"/>
+        <NamedIndividual IRI="#CRYPTOLOG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#CV"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#CV"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#certification"/>
+        <NamedIndividual IRI="#CerificationCISCO1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#certification"/>
+        <NamedIndividual IRI="#CerificationCISCO2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#certification"/>
+        <NamedIndividual IRI="#CerificationJAVAOCAO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#diploma"/>
+        <NamedIndividual IRI="#DUT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#training"/>
+        <NamedIndividual IRI="#DataMining"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#task"/>
+        <NamedIndividual IRI="#DevellopementFrameworkJAVA-ABAP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#task"/>
+        <NamedIndividual IRI="#DevellopementFrameworkJAVA-BIGDATA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#task"/>
+        <NamedIndividual IRI="#DevellopementFrameworkJAVA-ECURITY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#task"/>
+        <NamedIndividual IRI="#DevellopementFrameworkJAVA-information-Retrieval"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#task"/>
+        <NamedIndividual IRI="#DevelopementSymfony2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#task"/>
+        <NamedIndividual IRI="#DeveloppementApplicationDesktopASP.NET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#job"/>
+        <NamedIndividual IRI="#DeveloppeurFREELANCE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#job"/>
+        <NamedIndividual IRI="#DeveloppeurJAVA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#university"/>
+        <NamedIndividual IRI="#ESPRIT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#university"/>
+        <NamedIndividual IRI="#ESSTT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#university"/>
+        <NamedIndividual IRI="#EST"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#languisticCompetence"/>
+        <NamedIndividual IRI="#FRANCAIS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#company"/>
+        <NamedIndividual IRI="#FRANCELABS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#trainingOrganization"/>
+        <NamedIndividual IRI="#FRANCELABS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#interest"/>
+        <NamedIndividual IRI="#Football"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#country"/>
+        <NamedIndividual IRI="#France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#technicalCompetence"/>
+        <NamedIndividual IRI="#HADOOP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#university"/>
+        <NamedIndividual IRI="#IBNOUMANDOUR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#technicalCompetence"/>
+        <NamedIndividual IRI="#INFORMATIONRETRIEVAL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#university"/>
+        <NamedIndividual IRI="#IUTNANCY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#diploma"/>
+        <NamedIndividual IRI="#Ingenieur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#technicalCompetence"/>
+        <NamedIndividual IRI="#JAVA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#diploma"/>
+        <NamedIndividual IRI="#Licence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#diploma"/>
+        <NamedIndividual IRI="#LicencePro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#trainingOrganization"/>
+        <NamedIndividual IRI="#MONGODBCO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#training"/>
+        <NamedIndividual IRI="#MachineLearning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#country"/>
+        <NamedIndividual IRI="#Maroc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#diploma"/>
+        <NamedIndividual IRI="#MastereAL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#diploma"/>
+        <NamedIndividual IRI="#MastereWEB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#student"/>
+        <NamedIndividual IRI="#Michele"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#training"/>
+        <NamedIndividual IRI="#MongoDB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#teacher"/>
+        <NamedIndividual IRI="#Mosser"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#interest"/>
+        <NamedIndividual IRI="#Music"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#interest"/>
+        <NamedIndividual IRI="#Nouvelles_Technologies"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#company"/>
+        <NamedIndividual IRI="#OCP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#trainingOrganization"/>
+        <NamedIndividual IRI="#OCP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#company"/>
+        <NamedIndividual IRI="#ONE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#trainingOrganization"/>
+        <NamedIndividual IRI="#ONE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#technicalCompetence"/>
+        <NamedIndividual IRI="#PHP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#university"/>
+        <NamedIndividual IRI="#POLYTECH-NICE-SOPHIA-ANTIPOLIS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#StudyProject"/>
+        <NamedIndividual IRI="#ProjectAL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#StudyProject"/>
+        <NamedIndividual IRI="#ProjectCV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#StudyProject"/>
+        <NamedIndividual IRI="#ProjectSOA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#company"/>
+        <NamedIndividual IRI="#SAP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#technicalCompetence"/>
+        <NamedIndividual IRI="#SEMANTICWEB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#optionalCourse"/>
+        <NamedIndividual IRI="#SOA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#trainingOrganization"/>
+        <NamedIndividual IRI="#STANFORDUNIVERSITY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#teacher"/>
+        <NamedIndividual IRI="#Salvan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#internship"/>
+        <NamedIndividual IRI="#StageAdministrateurReseau"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#internship"/>
+        <NamedIndividual IRI="#StageDeveloppeurASP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#internship"/>
+        <NamedIndividual IRI="#StageDeveloppeurBIGDATA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#internship"/>
+        <NamedIndividual IRI="#StageDeveloppeurJAVA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#internship"/>
+        <NamedIndividual IRI="#StageDeveloppeurWEB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#task"/>
+        <NamedIndividual IRI="#SurveillanceNuit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#job"/>
+        <NamedIndividual IRI="#Surveillant-nuit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#interest"/>
+        <NamedIndividual IRI="#Swimming"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#university"/>
+        <NamedIndividual IRI="#TAHAHSIN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#country"/>
+        <NamedIndividual IRI="#Tunisie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#trainingOrganization"/>
+        <NamedIndividual IRI="#WEKA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#obligatoryCourse"/>
+        <NamedIndividual IRI="#WebSemantic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#student"/>
+        <NamedIndividual IRI="#cathline"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#student"/>
+        <NamedIndividual IRI="#david"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#student"/>
+        <NamedIndividual IRI="#francois"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#student"/>
+        <NamedIndividual IRI="#guillaume"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#student"/>
+        <NamedIndividual IRI="#tounsi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="v#technicalCompetence"/>
+        <NamedIndividual IRI="#.NET"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inCompany"/>
+        <NamedIndividual IRI="#AgentAccueil-Stadardiste"/>
+        <NamedIndividual IRI="#CIV"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inCountry"/>
+        <NamedIndividual IRI="#AgentAccueil-Stadardiste"/>
+        <NamedIndividual IRI="#France"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taskDone"/>
+        <NamedIndividual IRI="#AgentAccueil-Stadardiste"/>
+        <NamedIndividual IRI="#Accueil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCV"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#intrainingOrganization"/>
+        <NamedIndividual IRI="#ApacheLucenneSolrTraining"/>
+        <NamedIndividual IRI="#FRANCELABS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followedBy"/>
+        <NamedIndividual IRI="#ArchitectureLogicielle"/>
+        <NamedIndividual IRI="#guillaume"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followedBy"/>
+        <NamedIndividual IRI="#ArchitectureLogicielle"/>
+        <NamedIndividual IRI="#cathline"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followedBy"/>
+        <NamedIndividual IRI="#ArchitectureLogicielle"/>
+        <NamedIndividual IRI="#francois"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasProject"/>
+        <NamedIndividual IRI="#ArchitectureLogicielle"/>
+        <NamedIndividual IRI="#ProjectAL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teachedBy"/>
+        <NamedIndividual IRI="#ArchitectureLogicielle"/>
+        <NamedIndividual IRI="#Salvan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCV"/>
+        <NamedIndividual IRI="#Ayoub"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atUniversity"/>
+        <NamedIndividual IRI="#Baccalaureat"/>
+        <NamedIndividual IRI="#TAHAHSIN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atUniversity"/>
+        <NamedIndividual IRI="#BaccalaureatA"/>
+        <NamedIndividual IRI="#IBNOUMANDOUR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsCompetence"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#BIGDATA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsCompetence"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#ARABE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsCompetence"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#JAVA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsCompetence"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#SEMANTICWEB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsCompetence"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#HADOOP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsCompetence"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#ANGLAIS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsCompetence"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#INFORMATIONRETRIEVAL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsCompetence"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#FRANCAIS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsDiploma"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#Licence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsDiploma"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#Ingenieur"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsDiploma"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#Baccalaureat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsDiploma"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#MastereWEB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsExperience"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#DeveloppeurJAVA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsExperience"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#DeveloppeurFREELANCE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsExperience"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#StageDeveloppeurJAVA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsExperience"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#StageDeveloppeurBIGDATA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsInterest"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#Swimming"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsInterest"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#Music"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsInterest"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#Football"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containscertification"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#CerificationCISCO1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containscertification"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#CerificationCISCO2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containscertification"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#CerificationJAVAOCAO"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containstraining"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#DataMining"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containstraining"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#MachineLearning"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containstraining"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#ApacheLucenneSolrTraining"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containstraining"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <NamedIndividual IRI="#MongoDB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsCompetence"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <NamedIndividual IRI="#JAVA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsCompetence"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <NamedIndividual IRI="#ARABE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsCompetence"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <NamedIndividual IRI="#SEMANTICWEB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsCompetence"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <NamedIndividual IRI="#ANGLAIS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsCompetence"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <NamedIndividual IRI="#FRANCAIS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsCompetence"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <NamedIndividual IRI="#PHP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsDiploma"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <NamedIndividual IRI="#LicencePro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsDiploma"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <NamedIndividual IRI="#DUT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsDiploma"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <NamedIndividual IRI="#BaccalaureatA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsDiploma"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <NamedIndividual IRI="#MastereWEB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsExperience"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <NamedIndividual IRI="#Surveillant-nuit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsExperience"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <NamedIndividual IRI="#StageDeveloppeurWEB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsExperience"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <NamedIndividual IRI="#StageAdministrateurReseau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsExperience"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <NamedIndividual IRI="#StageDeveloppeurASP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsExperience"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <NamedIndividual IRI="#AgentAccueil-Stadardiste"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsInterest"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <NamedIndividual IRI="#Football"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsInterest"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <NamedIndividual IRI="#Music"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsInterest"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <NamedIndividual IRI="#Nouvelles_Technologies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atUniversity"/>
+        <NamedIndividual IRI="#DUT"/>
+        <NamedIndividual IRI="#EST"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#intrainingOrganization"/>
+        <NamedIndividual IRI="#DataMining"/>
+        <NamedIndividual IRI="#WEKA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inCompany"/>
+        <NamedIndividual IRI="#DeveloppeurFREELANCE"/>
+        <NamedIndividual IRI="#FRANCELABS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inCountry"/>
+        <NamedIndividual IRI="#DeveloppeurFREELANCE"/>
+        <NamedIndividual IRI="#France"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taskDone"/>
+        <NamedIndividual IRI="#DeveloppeurFREELANCE"/>
+        <NamedIndividual IRI="#DevellopementFrameworkJAVA-information-Retrieval"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inCompany"/>
+        <NamedIndividual IRI="#DeveloppeurJAVA"/>
+        <NamedIndividual IRI="#CRYPTOLOG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inCountry"/>
+        <NamedIndividual IRI="#DeveloppeurJAVA"/>
+        <NamedIndividual IRI="#Tunisie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taskDone"/>
+        <NamedIndividual IRI="#DeveloppeurJAVA"/>
+        <NamedIndividual IRI="#DevellopementFrameworkJAVA-ECURITY"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atUniversity"/>
+        <NamedIndividual IRI="#Ingenieur"/>
+        <NamedIndividual IRI="#ESPRIT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atUniversity"/>
+        <NamedIndividual IRI="#Licence"/>
+        <NamedIndividual IRI="#ESSTT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atUniversity"/>
+        <NamedIndividual IRI="#LicencePro"/>
+        <NamedIndividual IRI="#IUTNANCY"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#intrainingOrganization"/>
+        <NamedIndividual IRI="#MachineLearning"/>
+        <NamedIndividual IRI="#STANFORDUNIVERSITY"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atUniversity"/>
+        <NamedIndividual IRI="#MastereAL"/>
+        <NamedIndividual IRI="#POLYTECH-NICE-SOPHIA-ANTIPOLIS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsCourse"/>
+        <NamedIndividual IRI="#MastereAL"/>
+        <NamedIndividual IRI="#ArchitectureLogicielle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atUniversity"/>
+        <NamedIndividual IRI="#MastereWEB"/>
+        <NamedIndividual IRI="#POLYTECH-NICE-SOPHIA-ANTIPOLIS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsCourse"/>
+        <NamedIndividual IRI="#MastereWEB"/>
+        <NamedIndividual IRI="#WebSemantic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsCourse"/>
+        <NamedIndividual IRI="#MastereWEB"/>
+        <NamedIndividual IRI="#SOA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#intrainingOrganization"/>
+        <NamedIndividual IRI="#MongoDB"/>
+        <NamedIndividual IRI="#MONGODBCO"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followedBy"/>
+        <NamedIndividual IRI="#SOA"/>
+        <NamedIndividual IRI="#tounsi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followedBy"/>
+        <NamedIndividual IRI="#SOA"/>
+        <NamedIndividual IRI="#guillaume"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followedBy"/>
+        <NamedIndividual IRI="#SOA"/>
+        <NamedIndividual IRI="#Ayoub"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followedBy"/>
+        <NamedIndividual IRI="#SOA"/>
+        <NamedIndividual IRI="#cathline"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followedBy"/>
+        <NamedIndividual IRI="#SOA"/>
+        <NamedIndividual IRI="#francois"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followedBy"/>
+        <NamedIndividual IRI="#SOA"/>
+        <NamedIndividual IRI="#Michele"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followedBy"/>
+        <NamedIndividual IRI="#SOA"/>
+        <NamedIndividual IRI="#david"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followedBy"/>
+        <NamedIndividual IRI="#SOA"/>
+        <NamedIndividual IRI="#Ahmed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasProject"/>
+        <NamedIndividual IRI="#SOA"/>
+        <NamedIndividual IRI="#ProjectSOA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teachedBy"/>
+        <NamedIndividual IRI="#SOA"/>
+        <NamedIndividual IRI="#Mosser"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inCompany"/>
+        <NamedIndividual IRI="#StageAdministrateurReseau"/>
+        <NamedIndividual IRI="#OCP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inCountry"/>
+        <NamedIndividual IRI="#StageAdministrateurReseau"/>
+        <NamedIndividual IRI="#Maroc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taskDone"/>
+        <NamedIndividual IRI="#StageAdministrateurReseau"/>
+        <NamedIndividual IRI="#AdministrationReseau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inCompany"/>
+        <NamedIndividual IRI="#StageDeveloppeurASP"/>
+        <NamedIndividual IRI="#ONE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inCountry"/>
+        <NamedIndividual IRI="#StageDeveloppeurASP"/>
+        <NamedIndividual IRI="#Maroc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taskDone"/>
+        <NamedIndividual IRI="#StageDeveloppeurASP"/>
+        <NamedIndividual IRI="#DeveloppementApplicationDesktopASP.NET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inCompany"/>
+        <NamedIndividual IRI="#StageDeveloppeurBIGDATA"/>
+        <NamedIndividual IRI="#FRANCELABS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inCountry"/>
+        <NamedIndividual IRI="#StageDeveloppeurBIGDATA"/>
+        <NamedIndividual IRI="#France"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taskDone"/>
+        <NamedIndividual IRI="#StageDeveloppeurBIGDATA"/>
+        <NamedIndividual IRI="#DevellopementFrameworkJAVA-BIGDATA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inCompany"/>
+        <NamedIndividual IRI="#StageDeveloppeurJAVA"/>
+        <NamedIndividual IRI="#SAP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inCountry"/>
+        <NamedIndividual IRI="#StageDeveloppeurJAVA"/>
+        <NamedIndividual IRI="#France"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taskDone"/>
+        <NamedIndividual IRI="#StageDeveloppeurJAVA"/>
+        <NamedIndividual IRI="#DevellopementFrameworkJAVA-ABAP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inCompany"/>
+        <NamedIndividual IRI="#StageDeveloppeurWEB"/>
+        <NamedIndividual IRI="#CCIDesVosges"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inCountry"/>
+        <NamedIndividual IRI="#StageDeveloppeurWEB"/>
+        <NamedIndividual IRI="#France"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taskDone"/>
+        <NamedIndividual IRI="#StageDeveloppeurWEB"/>
+        <NamedIndividual IRI="#DevelopementSymfony2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inCompany"/>
+        <NamedIndividual IRI="#Surveillant-nuit"/>
+        <NamedIndividual IRI="#CIV"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inCountry"/>
+        <NamedIndividual IRI="#Surveillant-nuit"/>
+        <NamedIndividual IRI="#France"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taskDone"/>
+        <NamedIndividual IRI="#Surveillant-nuit"/>
+        <NamedIndividual IRI="#SurveillanceNuit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followedBy"/>
+        <NamedIndividual IRI="#WebSemantic"/>
+        <NamedIndividual IRI="#Michele"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followedBy"/>
+        <NamedIndividual IRI="#WebSemantic"/>
+        <NamedIndividual IRI="#tounsi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followedBy"/>
+        <NamedIndividual IRI="#WebSemantic"/>
+        <NamedIndividual IRI="#Ayoub"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followedBy"/>
+        <NamedIndividual IRI="#WebSemantic"/>
+        <NamedIndividual IRI="#david"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#followedBy"/>
+        <NamedIndividual IRI="#WebSemantic"/>
+        <NamedIndividual IRI="#Ahmed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasProject"/>
+        <NamedIndividual IRI="#WebSemantic"/>
+        <NamedIndividual IRI="#ProjectCV"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teachedBy"/>
+        <NamedIndividual IRI="#WebSemantic"/>
+        <NamedIndividual IRI="#CATHERINE-FARON-ZUCKER"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslevel"/>
+        <NamedIndividual IRI="#ANGLAIS"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FLUENT</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslevel"/>
+        <NamedIndividual IRI="#ARABE"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NATIVE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endATDate"/>
+        <NamedIndividual IRI="#AgentAccueil-Stadardiste"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2014-08-31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOccupiedPosition"/>
+        <NamedIndividual IRI="#AgentAccueil-Stadardiste"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Agent d&apos;accueil et Standardiste</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#startATDate"/>
+        <NamedIndividual IRI="#AgentAccueil-Stadardiste"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2014-07-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAdress"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Valbonne</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&xsd;integer">26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthDate"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1988-11-25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEmail"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ahmedEmail</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLastname"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ahmed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Missaoui</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPhonenumber"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&xsd;integer">00000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hascharateritic"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">autonome</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hascharateritic"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">bosseur</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hascharateritic"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sérieux</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslicenceDriver"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#ApacheLucenneSolrTraining"/>
+        <Literal datatypeIRI="&xsd;integer">2013</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAdress"/>
+        <NamedIndividual IRI="#Ayoub"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Casablanca</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Ayoub"/>
+        <Literal datatypeIRI="&xsd;integer">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthDate"/>
+        <NamedIndividual IRI="#Ayoub"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1993-01-04</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEmail"/>
+        <NamedIndividual IRI="#Ayoub"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ayoubEmail</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLastname"/>
+        <NamedIndividual IRI="#Ayoub"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ayoub</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Ayoub"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Benathmane</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPhonenumber"/>
+        <NamedIndividual IRI="#Ayoub"/>
+        <Literal datatypeIRI="&xsd;integer">11111</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hascharateritic"/>
+        <NamedIndividual IRI="#Ayoub"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">à l&apos;aise de travailler sous pression</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslicenceDriver"/>
+        <NamedIndividual IRI="#Ayoub"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslevel"/>
+        <NamedIndividual IRI="#BIGDATA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">6 month experience</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Baccalaureat"/>
+        <Literal datatypeIRI="&xsd;integer">2007</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inField"/>
+        <NamedIndividual IRI="#Baccalaureat"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Science Experimental</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studyLevel"/>
+        <NamedIndividual IRI="#Baccalaureat"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BAC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#BaccalaureatA"/>
+        <Literal datatypeIRI="&xsd;integer">2010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inField"/>
+        <NamedIndividual IRI="#BaccalaureatA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Physique Chimie</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studyLevel"/>
+        <NamedIndividual IRI="#BaccalaureatA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BAC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSummary"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Recherche Un stage PFE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ingenieur JAVA-JEE/BIG-DATA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSummary"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Recherche Un stage de fin d&apos;étude</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#CV_AYOUB"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Intégrateur Web, Administrateur Systèmes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#CerificationCISCO1"/>
+        <Literal datatypeIRI="&xsd;integer">2012</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#CerificationCISCO2"/>
+        <Literal datatypeIRI="&xsd;integer">2012</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#CerificationJAVAOCAO"/>
+        <Literal datatypeIRI="&xsd;integer">2014</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#DUT"/>
+        <Literal datatypeIRI="&xsd;integer">2012</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inField"/>
+        <NamedIndividual IRI="#DUT"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Administration des systèmes et réseaux</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studyLevel"/>
+        <NamedIndividual IRI="#DUT"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BAC+2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#DataMining"/>
+        <Literal datatypeIRI="&xsd;integer">2014</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endATDate"/>
+        <NamedIndividual IRI="#DeveloppeurFREELANCE"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2013-03-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOccupiedPosition"/>
+        <NamedIndividual IRI="#DeveloppeurFREELANCE"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Developpeur Java-information-Retrieval</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#startATDate"/>
+        <NamedIndividual IRI="#DeveloppeurFREELANCE"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2013-02-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endATDate"/>
+        <NamedIndividual IRI="#DeveloppeurJAVA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2014-08-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOccupiedPosition"/>
+        <NamedIndividual IRI="#DeveloppeurJAVA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Developpeur Java-SECURITY</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#startATDate"/>
+        <NamedIndividual IRI="#DeveloppeurJAVA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2013-11-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslevel"/>
+        <NamedIndividual IRI="#FRANCAIS"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BILLINGUE , C1 LEVEL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslevel"/>
+        <NamedIndividual IRI="#HADOOP"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">6 month experience</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslevel"/>
+        <NamedIndividual IRI="#INFORMATIONRETRIEVAL"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Certified</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Ingenieur"/>
+        <Literal datatypeIRI="&xsd;integer">2013</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inField"/>
+        <NamedIndividual IRI="#Ingenieur"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerScience</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studyLevel"/>
+        <NamedIndividual IRI="#Ingenieur"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BAC+5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslevel"/>
+        <NamedIndividual IRI="#JAVA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Certified</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Licence"/>
+        <Literal datatypeIRI="&xsd;integer">2010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inField"/>
+        <NamedIndividual IRI="#Licence"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerScience</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studyLevel"/>
+        <NamedIndividual IRI="#Licence"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Licence(BAC+3)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#LicencePro"/>
+        <Literal datatypeIRI="&xsd;integer">2013</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inField"/>
+        <NamedIndividual IRI="#LicencePro"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Concepteur-integrateur des Systèmes Intranet/Internet</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studyLevel"/>
+        <NamedIndividual IRI="#LicencePro"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Licence(BAC+3)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#MachineLearning"/>
+        <Literal datatypeIRI="&xsd;integer">2014</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endATDate"/>
+        <NamedIndividual IRI="#MastereWEB"/>
+        <Literal datatypeIRI="&xsd;integer">2015</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inField"/>
+        <NamedIndividual IRI="#MastereWEB"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WEB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#startATDate"/>
+        <NamedIndividual IRI="#MastereWEB"/>
+        <Literal datatypeIRI="&xsd;integer">2014</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studyLevel"/>
+        <NamedIndividual IRI="#MastereWEB"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BAC+5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#MongoDB"/>
+        <Literal datatypeIRI="&xsd;integer">2014</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslevel"/>
+        <NamedIndividual IRI="#PHP"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">5 month experience</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslevel"/>
+        <NamedIndividual IRI="#SEMANTICWEB"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Learning</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMark"/>
+        <NamedIndividual IRI="#SOA"/>
+        <Literal datatypeIRI="&xsd;integer">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endATDate"/>
+        <NamedIndividual IRI="#StageAdministrateurReseau"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2012-06-31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOccupiedPosition"/>
+        <NamedIndividual IRI="#StageAdministrateurReseau"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Administrateur Reseau</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#startATDate"/>
+        <NamedIndividual IRI="#StageAdministrateurReseau"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2012-04-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endATDate"/>
+        <NamedIndividual IRI="#StageDeveloppeurASP"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2011-08-31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOccupiedPosition"/>
+        <NamedIndividual IRI="#StageDeveloppeurASP"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Developpeur Application Desktop ASP.NET</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#startATDate"/>
+        <NamedIndividual IRI="#StageDeveloppeurASP"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2011-07-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endATDate"/>
+        <NamedIndividual IRI="#StageDeveloppeurBIGDATA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2013-02-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOccupiedPosition"/>
+        <NamedIndividual IRI="#StageDeveloppeurBIGDATA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Developpeur Java-BIG-DATA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#startATDate"/>
+        <NamedIndividual IRI="#StageDeveloppeurBIGDATA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2012-08-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endATDate"/>
+        <NamedIndividual IRI="#StageDeveloppeurJAVA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2013-08-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOccupiedPosition"/>
+        <NamedIndividual IRI="#StageDeveloppeurJAVA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Developpeur Java</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#startATDate"/>
+        <NamedIndividual IRI="#StageDeveloppeurJAVA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2013-03-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endATDate"/>
+        <NamedIndividual IRI="#StageDeveloppeurWEB"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2013-07-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOccupiedPosition"/>
+        <NamedIndividual IRI="#StageDeveloppeurWEB"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Developpeur Symfony 2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#startATDate"/>
+        <NamedIndividual IRI="#StageDeveloppeurWEB"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2013-04-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endATDate"/>
+        <NamedIndividual IRI="#Surveillant-nuit"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2015-06-30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOccupiedPosition"/>
+        <NamedIndividual IRI="#Surveillant-nuit"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Surveillant de nuit</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#startATDate"/>
+        <NamedIndividual IRI="#Surveillant-nuit"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2014-09-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMark"/>
+        <NamedIndividual IRI="#WebSemantic"/>
+        <Literal datatypeIRI="&xsd;integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslevel"/>
+        <NamedIndividual IRI="#.NET"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2 month experience</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#containsCompetence"/>
+        <ObjectProperty IRI="#contains"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#containsDiploma"/>
+        <ObjectProperty IRI="#contains"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#containsExperience"/>
+        <ObjectProperty IRI="#contains"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#containsInterest"/>
+        <ObjectProperty IRI="#contains"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#containsReference"/>
+        <ObjectProperty IRI="#contains"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#containscertification"/>
+        <ObjectProperty IRI="#contains"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#containstraining"/>
+        <ObjectProperty IRI="#contains"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#atUniversity"/>
+        <Class IRI="v#diploma"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="v#CV"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#containsCourse"/>
+        <Class IRI="v#diploma"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#followedBy"/>
+        <Class IRI="v#course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCV"/>
+        <Class IRI="v#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOccupiedPosition"/>
+        <Class IRI="v#professionalExperience"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProject"/>
+        <Class IRI="v#course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasmaritalStatus"/>
+        <Class IRI="v#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inCompany"/>
+        <Class IRI="v#professionalExperience"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inResearchLaboratory"/>
+        <Class IRI="v#professionalExperience"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#intrainingOrganization"/>
+        <Class IRI="v#training"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#studyLevel"/>
+        <Class IRI="v#diploma"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#taskDone"/>
+        <Class IRI="v#professionalExperience"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#teachedBy"/>
+        <Class IRI="v#course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#atUniversity"/>
+        <Class IRI="v#university"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containsCompetence"/>
+        <Class IRI="v#competence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containsCourse"/>
+        <Class IRI="v#course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containsDiploma"/>
+        <Class IRI="v#diploma"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containsExperience"/>
+        <Class IRI="v#professionalExperience"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containsInterest"/>
+        <Class IRI="v#interest"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containsReference"/>
+        <Class IRI="v#reference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containscertification"/>
+        <Class IRI="v#certification"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containstraining"/>
+        <Class IRI="v#training"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#followedBy"/>
+        <Class IRI="v#student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCV"/>
+        <Class IRI="v#CV"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOccupiedPosition"/>
+        <Class IRI="v#occupiedPosition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProject"/>
+        <Class IRI="v#StudyProject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasmaritalStatus"/>
+        <Class IRI="#MaritalStatus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inCompany"/>
+        <Class IRI="v#company"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inCountry"/>
+        <Class IRI="v#country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inResearchLaboratory"/>
+        <Class IRI="v#researchLaboratory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#intrainingOrganization"/>
+        <Class IRI="v#trainingOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#taskDone"/>
+        <Class IRI="v#task"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#teachedBy"/>
+        <Class IRI="v#teacher"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAdress"/>
+        <Class IRI="v#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAge"/>
+        <Class IRI="v#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBirthDate"/>
+        <Class IRI="v#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEmail"/>
+        <Class IRI="v#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMark"/>
+        <Class IRI="v#course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="v#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPhonenumber"/>
+        <Class IRI="v#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSummary"/>
+        <Class IRI="v#CV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTitle"/>
+        <Class IRI="v#CV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hascharateritic"/>
+        <Class IRI="v#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haslevel"/>
+        <Class IRI="v#competence"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haslicenceDriver"/>
+        <Class IRI="v#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#inField"/>
+        <Class IRI="v#diploma"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#inField"/>
+        <Class IRI="v#professionalExperience"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#inField"/>
+        <Class IRI="v#training"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#studyLevel"/>
+        <Class IRI="v#diploma"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#endATDate"/>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAdress"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAge"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBirthDate"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:date"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEmail"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLabel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLastname"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMark"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPhonenumber"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSummary"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hascharateritic"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haslevel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haslicenceDriver"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#inField"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#startATDate"/>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#studyLevel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
