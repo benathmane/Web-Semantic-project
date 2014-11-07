@@ -139,64 +139,16 @@
         <ObjectProperty IRI="#containstraining"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#endATDate"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#followedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasAdress"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasAge"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasBirthDate"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasCV"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasDate"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasEmail"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasLabel"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasLastname"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasMark"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasName"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasOccupiedPosition"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasPhonenumber"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasProject"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSummary"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasTitle"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hascharateritic"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#haslevel"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#haslicenceDriver"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasmaritalStatus"/>
@@ -208,16 +160,10 @@
         <ObjectProperty IRI="#inCountry"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#inField"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#inResearchLaboratory"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#intrainingOrganization"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#startATDate"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#studyLevel"/>
@@ -227,6 +173,66 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#teachedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#endATDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAdress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBirthDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEmail"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLabel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLastname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMark"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOccupiedPosition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPhonenumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSummary"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hascharateritic"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haslevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haslicenceDriver"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#inField"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#startATDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#studyLevel"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ANGLAIS"/>
@@ -932,12 +938,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsCompetence"/>
         <NamedIndividual IRI="#CV_AHMED"/>
-        <NamedIndividual IRI="#ARABE"/>
+        <NamedIndividual IRI="#BIGDATA"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsCompetence"/>
         <NamedIndividual IRI="#CV_AHMED"/>
-        <NamedIndividual IRI="#BIGDATA"/>
+        <NamedIndividual IRI="#ARABE"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsCompetence"/>
@@ -1409,6 +1415,281 @@
         <NamedIndividual IRI="#WebSemantic"/>
         <NamedIndividual IRI="#CATHERINE-FARON-ZUCKER"/>
     </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslevel"/>
+        <NamedIndividual IRI="#ANGLAIS"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FLUENT</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslevel"/>
+        <NamedIndividual IRI="#ARABE"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NATIVE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAdress"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Valbonne</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&xsd;integer">26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthDate"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1988-11-25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEmail"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ahmedEmail</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLastname"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ahmed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Missaoui</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPhonenumber"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&xsd;integer">00000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hascharateritic"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">autonome</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hascharateritic"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">bosseur</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hascharateritic"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sérieux</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslicenceDriver"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#ApacheLucenneSolrTraining"/>
+        <Literal datatypeIRI="&xsd;integer">2013</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslevel"/>
+        <NamedIndividual IRI="#BIGDATA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">6 month experience</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Baccalaureat"/>
+        <Literal datatypeIRI="&xsd;integer">2007</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inField"/>
+        <NamedIndividual IRI="#Baccalaureat"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Science Experimental</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studyLevel"/>
+        <NamedIndividual IRI="#Baccalaureat"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BAC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ingenieur JAVA-JEE/BIG-DATA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#CV_AHMED"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Recherche Un stage PFE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#CerificationCISCO1"/>
+        <Literal datatypeIRI="&xsd;integer">2012</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#CerificationCISCO2"/>
+        <Literal datatypeIRI="&xsd;integer">2012</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#CerificationJAVAOCAO"/>
+        <Literal datatypeIRI="&xsd;integer">2014</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#DataMining"/>
+        <Literal datatypeIRI="&xsd;integer">2014</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endATDate"/>
+        <NamedIndividual IRI="#DeveloppeurFREELANCE"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2013-03-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOccupiedPosition"/>
+        <NamedIndividual IRI="#DeveloppeurFREELANCE"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Developpeur Java-information-Retrieval</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#startATDate"/>
+        <NamedIndividual IRI="#DeveloppeurFREELANCE"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2013-02-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endATDate"/>
+        <NamedIndividual IRI="#DeveloppeurJAVA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2014-08-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOccupiedPosition"/>
+        <NamedIndividual IRI="#DeveloppeurJAVA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Developpeur Java-SECURITY</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#startATDate"/>
+        <NamedIndividual IRI="#DeveloppeurJAVA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2013-11-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslevel"/>
+        <NamedIndividual IRI="#FRANCAIS"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BILLINGUE , C1 LEVEL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslevel"/>
+        <NamedIndividual IRI="#HADOOP"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">6 month experience</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslevel"/>
+        <NamedIndividual IRI="#INFORMATIONRETRIEVAL"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Certified</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Ingenieur"/>
+        <Literal datatypeIRI="&xsd;integer">2013</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inField"/>
+        <NamedIndividual IRI="#Ingenieur"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerScience</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studyLevel"/>
+        <NamedIndividual IRI="#Ingenieur"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BAC+5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslevel"/>
+        <NamedIndividual IRI="#JAVA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Certified</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Licence"/>
+        <Literal datatypeIRI="&xsd;integer">2010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inField"/>
+        <NamedIndividual IRI="#Licence"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerScience</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studyLevel"/>
+        <NamedIndividual IRI="#Licence"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Licence(BAC+3)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#MachineLearning"/>
+        <Literal datatypeIRI="&xsd;integer">2014</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endATDate"/>
+        <NamedIndividual IRI="#MastereWEB"/>
+        <Literal datatypeIRI="&xsd;integer">2015</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inField"/>
+        <NamedIndividual IRI="#MastereWEB"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WEB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#startATDate"/>
+        <NamedIndividual IRI="#MastereWEB"/>
+        <Literal datatypeIRI="&xsd;integer">2014</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studyLevel"/>
+        <NamedIndividual IRI="#MastereWEB"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BAC+5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#MongoDB"/>
+        <Literal datatypeIRI="&xsd;integer">2014</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haslevel"/>
+        <NamedIndividual IRI="#SEMANTICWEB"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Learning</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMark"/>
+        <NamedIndividual IRI="#SOA"/>
+        <Literal datatypeIRI="&xsd;integer">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endATDate"/>
+        <NamedIndividual IRI="#StageDeveloppeurBIGDATA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2013-02-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOccupiedPosition"/>
+        <NamedIndividual IRI="#StageDeveloppeurBIGDATA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Developpeur Java-BIG-DATA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#startATDate"/>
+        <NamedIndividual IRI="#StageDeveloppeurBIGDATA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2012-08-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endATDate"/>
+        <NamedIndividual IRI="#StageDeveloppeurJAVA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2013-08-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOccupiedPosition"/>
+        <NamedIndividual IRI="#StageDeveloppeurJAVA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Developpeur Java</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#startATDate"/>
+        <NamedIndividual IRI="#StageDeveloppeurJAVA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2013-03-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMark"/>
+        <NamedIndividual IRI="#WebSemantic"/>
+        <Literal datatypeIRI="&xsd;integer">15</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#containsCompetence"/>
         <ObjectProperty IRI="#contains"/>
@@ -1454,35 +1735,7 @@
         <Class IRI="v#course"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasAdress"/>
-        <Class IRI="v#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasAge"/>
-        <Class IRI="v#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasBirthDate"/>
-        <Class IRI="v#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCV"/>
-        <Class IRI="v#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasEmail"/>
-        <Class IRI="v#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasLastname"/>
-        <Class IRI="v#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasMark"/>
-        <Class IRI="v#course"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasName"/>
         <Class IRI="v#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -1490,28 +1743,8 @@
         <Class IRI="v#professionalExperience"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasPhonenumber"/>
-        <Class IRI="v#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProject"/>
         <Class IRI="v#course"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasSummary"/>
-        <Class IRI="v#CV"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasTitle"/>
-        <Class IRI="v#CV"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#haslevel"/>
-        <Class IRI="v#competence"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#haslicenceDriver"/>
-        <Class IRI="v#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasmaritalStatus"/>
@@ -1520,18 +1753,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#inCompany"/>
         <Class IRI="v#professionalExperience"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#inField"/>
-        <Class IRI="v#diploma"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#inField"/>
-        <Class IRI="v#professionalExperience"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#inField"/>
-        <Class IRI="v#training"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#inResearchLaboratory"/>
@@ -1596,10 +1817,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCV"/>
         <Class IRI="v#CV"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasMark"/>
-        <Class IRI="v#courseMark"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasOccupiedPosition"/>
@@ -1608,10 +1825,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasProject"/>
         <Class IRI="v#StudyProject"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hascharateritic"/>
-        <Class IRI="v#Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasmaritalStatus"/>
@@ -1624,10 +1837,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#inCountry"/>
         <Class IRI="v#country"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#inField"/>
-        <Class IRI="v#field"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#inResearchLaboratory"/>
@@ -1645,6 +1854,149 @@
         <ObjectProperty IRI="#teachedBy"/>
         <Class IRI="v#teacher"/>
     </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAdress"/>
+        <Class IRI="v#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAge"/>
+        <Class IRI="v#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBirthDate"/>
+        <Class IRI="v#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEmail"/>
+        <Class IRI="v#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMark"/>
+        <Class IRI="v#course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="v#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPhonenumber"/>
+        <Class IRI="v#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSummary"/>
+        <Class IRI="v#CV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTitle"/>
+        <Class IRI="v#CV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hascharateritic"/>
+        <Class IRI="v#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haslevel"/>
+        <Class IRI="v#competence"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haslicenceDriver"/>
+        <Class IRI="v#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#inField"/>
+        <Class IRI="v#diploma"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#inField"/>
+        <Class IRI="v#professionalExperience"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#inField"/>
+        <Class IRI="v#training"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#studyLevel"/>
+        <Class IRI="v#diploma"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#endATDate"/>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAdress"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAge"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBirthDate"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:date"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEmail"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLabel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLastname"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMark"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPhonenumber"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSummary"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hascharateritic"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haslevel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haslicenceDriver"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#inField"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#startATDate"/>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#studyLevel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
 </Ontology>
 
 
