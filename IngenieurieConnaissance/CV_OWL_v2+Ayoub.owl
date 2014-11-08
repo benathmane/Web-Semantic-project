@@ -761,15 +761,7 @@
         <NamedIndividual IRI="#OCP"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="v#trainingOrganization"/>
-        <NamedIndividual IRI="#OCP"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="v#company"/>
-        <NamedIndividual IRI="#ONE"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="v#trainingOrganization"/>
         <NamedIndividual IRI="#ONE"/>
     </ClassAssertion>
     <ClassAssertion>
