@@ -1,11 +1,9 @@
-A modifier car j'ai modifier les relation qui ont comme range une literal,
-elles doivent etre des data properties.
-Il faut modifier re-verifier les individus car certians informations ont ete supprimés.
-----------------------------------------------------------------------------------------
-Ayoub : j'ai rajouté mes propores litteraux dans la version "CV_OWL_v2+Ayoub.owl".
-Aussi dans ton CV_Ahmedn,t'avais une faute je l'ai corrigé aulieu de mettre :
-hasSummary "Recherche Un stage PFE"  => t'as mis hasTitle "Recherche Un stage PFE"
-----------------------------------------------------------------------------------------
-
-Pour le rapport , j'ai commencer a l'ecrire , on devrai l'ameliorer mais ca sera pour demain.
-=> j'ai corrigé des erreurs, j'ai rajouté aussi la partie des raisonnements produits par le raisonneur Hermit
+Rapport modifié:
+	Ajout de signature de propriétés.
+	Mise à jour de la desciption des classes
+	Mise a jour des propriétés dans le projet Protétgé en mentionnant les relation fonctionel
+		relation fonctionnel :
+			Functional (single valued properties)
+			"There can be at most one individual (range) that is related 
+			to the domain individual via the property.
+			e.g. A person only has one mother."
