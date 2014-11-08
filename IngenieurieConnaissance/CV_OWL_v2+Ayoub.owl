@@ -49,13 +49,7 @@
         <Class IRI="v#course"/>
     </Declaration>
     <Declaration>
-        <Class IRI="v#courseMark"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="v#diploma"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="v#field"/>
     </Declaration>
     <Declaration>
         <Class IRI="v#interest"/>
@@ -71,9 +65,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="v#obligatoryCourse"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="v#occupiedPosition"/>
     </Declaration>
     <Declaration>
         <Class IRI="v#optionalCourse"/>
@@ -328,6 +319,9 @@
         <NamedIndividual IRI="#DeveloppeurJAVA"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Divorced"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#ESPRIT"/>
     </Declaration>
     <Declaration>
@@ -380,6 +374,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Maroc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Married"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#MastereAL"/>
@@ -437,6 +434,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Salvan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Single"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#StageAdministrateurReseau"/>
@@ -653,6 +653,10 @@
         <NamedIndividual IRI="#DeveloppeurJAVA"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#MaritalStatus"/>
+        <NamedIndividual IRI="#Divorced"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="v#university"/>
         <NamedIndividual IRI="#ESPRIT"/>
     </ClassAssertion>
@@ -729,6 +733,10 @@
         <NamedIndividual IRI="#Maroc"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#MaritalStatus"/>
+        <NamedIndividual IRI="#Married"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="v#diploma"/>
         <NamedIndividual IRI="#MastereAL"/>
     </ClassAssertion>
@@ -803,6 +811,10 @@
     <ClassAssertion>
         <Class IRI="v#teacher"/>
         <NamedIndividual IRI="#Salvan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MaritalStatus"/>
+        <NamedIndividual IRI="#Single"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="v#internship"/>
@@ -897,6 +909,11 @@
         <NamedIndividual IRI="#CV_AHMED"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasmaritalStatus"/>
+        <NamedIndividual IRI="#Ahmed"/>
+        <NamedIndividual IRI="#Single"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#intrainingOrganization"/>
         <NamedIndividual IRI="#ApacheLucenneSolrTraining"/>
         <NamedIndividual IRI="#FRANCELABS"/>
@@ -930,6 +947,11 @@
         <ObjectProperty IRI="#hasCV"/>
         <NamedIndividual IRI="#Ayoub"/>
         <NamedIndividual IRI="#CV_AYOUB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasmaritalStatus"/>
+        <NamedIndividual IRI="#Ayoub"/>
+        <NamedIndividual IRI="#Single"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#atUniversity"/>
@@ -2015,10 +2037,6 @@
         <Class IRI="v#CV"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasOccupiedPosition"/>
-        <Class IRI="v#occupiedPosition"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasProject"/>
         <Class IRI="v#StudyProject"/>
     </ObjectPropertyRange>
@@ -2100,15 +2118,11 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#inField"/>
-        <Class IRI="v#diploma"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#inField"/>
-        <Class IRI="v#professionalExperience"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#inField"/>
-        <Class IRI="v#training"/>
+        <ObjectUnionOf>
+            <Class IRI="v#diploma"/>
+            <Class IRI="v#professionalExperience"/>
+            <Class IRI="v#training"/>
+        </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#studyLevel"/>
